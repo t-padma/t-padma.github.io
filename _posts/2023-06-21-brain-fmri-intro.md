@@ -54,8 +54,8 @@ Three anatomical planes are used to divide the nervous system to be able to view
 ![roles](/images/planes.png)
 
 ### References
-1) [Brain basics](https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain) page by NIH.
-2) [Brain Anatomy](https://qbi.uq.edu.au/brain/brain-anatomy), Queensland Brain Institute.
-3) [Cerebral Cortex](https://my.clevelandclinic.org/health/articles/23073-cerebral-cortex), Cleveland Clinic.
-4) [Foundations of Neuroscience](https://openbooks.lib.msu.edu/neuroscience/), Casey Henley.
+1. [Brain basics](https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain) page by NIH.
+2. [Brain Anatomy](https://qbi.uq.edu.au/brain/brain-anatomy), Queensland Brain Institute.
+3. [Cerebral Cortex](https://my.clevelandclinic.org/health/articles/23073-cerebral-cortex), Cleveland Clinic.
+4. [Foundations of Neuroscience](https://openbooks.lib.msu.edu/neuroscience/), Casey Henley.
 
