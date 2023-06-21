@@ -2,7 +2,7 @@
 layout: article
 title: Basic Brain Anatomy
 mathjax: true
-tags: intro brain bio
+tags: intro brain bio anatomy
 ---
 
 The purpose of this post is to quickly introduce some brain anatomy basics before proceeding to understand **functional Magnetic Resonance Imaging**, or fMRI for short. My main reference to understanding these basics is the first chapter of [The Statistical Analysis of Functional MRI Data](https://doi.org/10.1007/978-0-387-78191-4) by Nicole A. Lazar. Two introductory Neuroscience resources, which can be used for reference are:
