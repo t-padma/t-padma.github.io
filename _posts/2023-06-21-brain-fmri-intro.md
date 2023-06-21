@@ -47,7 +47,11 @@ Some other terms to know:
 ## Directional Terms and Anatomical Planes
 It is useful to know some direction terms along with the planes or axes along which we can observe the brain before proceeding any further. I found chapter 16 of [4] extremely useful in getting a good understanding of different terms. 
 
-![lobes](/images/directions.png) ![roles](/images/planes.png)
+Directional terms are used to locate one structure, usually in relation to another structure. 
+![lobes](/images/directions.png) 
+
+Three anatomical planes are used to divide the nervous system to be able to view internal regions and structures. 
+![roles](/images/planes.png)
 
 ### References
 1) [Brain basics](https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain) page by NIH.
