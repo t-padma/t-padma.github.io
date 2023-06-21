@@ -1,16 +1,16 @@
 ---
 layout: article
-title: fMRI basics
+title: Basic Brain Anatomy
 mathjax: true
-tags: intro fmri brain bio
+tags: intro brain bio
 ---
 
-The purpose of this post is to quickly introduce some basics about **functional Magnetic Resonance Imaging**, or fMRI for short. My main reference to understanding these basics is the first chapter of [The Statistical Analysis of Functional MRI Data](https://doi.org/10.1007/978-0-387-78191-4) by Nicole A. Lazar. Two introductory Neuroscience resources, which can be used for reference are:
+The purpose of this post is to quickly introduce some brain anatomy basics before proceeding to understand **functional Magnetic Resonance Imaging**, or fMRI for short. My main reference to understanding these basics is the first chapter of [The Statistical Analysis of Functional MRI Data](https://doi.org/10.1007/978-0-387-78191-4) by Nicole A. Lazar. Two introductory Neuroscience resources, which can be used for reference are:
 * [Brain Anatomy](https://qbi.uq.edu.au/brain/brain-anatomy), Queensland Brain Institute.
 * [Foundations of Neuroscience](https://openbooks.lib.msu.edu/neuroscience/), Casey Henley.
 * [Brain basics](https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain)
 
-Before introducing fMRI, I will quickly summarize some important facts and the anatomy of the brain. Brain anatomy is mostly summarized pictorially for better understanding. Please note that most pictures used in this post are from either of the two resources.
+Brain anatomy is mostly summarized pictorially for better understanding. Please note that most pictures used in this post are from either of the two resources.
 
 Firstly, the brain has a left and a right hemisphere separated by the *corpus callosum* which can be thought of as the midline of the brain. The brain is made of three main parts: *forebrain, midbrain, and hindbrain*. [1]
 
@@ -37,15 +37,21 @@ Thalamus is important for sensory and motor function. It also controls our sleep
 The Hindbrain is made up of *cerebellum*, *pons*, and *medulla* as shown below. [2] 
 - Cerebellum is important for posture, balance, and movement.
 - Pons connect the brainstem to cerebral cortex.
-- Medulla oblongata contains control centers for functions like heart rate, blood pressure, breathing etc.
+- Medulla oblongata contains control centers for functions like heart rate, blood pressure, breathing, etc.
 
 ![hind](/images/hindbrain.png)
 
 Some other terms to know:
-*Limbic system* constitutes thalamus, hypothalamus, amygdala, and hippocampus. It plays an important role in emotional behaviour. Additionally, the midbrain together with the pons and medulla makes up the *brain stem*
+*Limbic system* constitutes thalamus, hypothalamus, amygdala, and hippocampus. It plays an important role in emotional behavior. Additionally, the midbrain together with the pons and medulla makes up the *brain stem*
+
+## Directional Terms and Anatomical Planes
+It is useful to know some direction terms along with the planes or axes along which we can observe the brain before proceeding any further. I found chapter 16 of [4] extremely useful in getting a good understanding of different terms. 
+
+![lobes](/images/directions.png) ![roles](/images/planes.png)
 
 ### References
 1) [Brain basics](https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain) page by NIH.
 2) [Brain Anatomy](https://qbi.uq.edu.au/brain/brain-anatomy), Queensland Brain Institute.
 3) [Cerebral Cortex](https://my.clevelandclinic.org/health/articles/23073-cerebral-cortex), Cleveland Clinic.
+4) [Foundations of Neuroscience](https://openbooks.lib.msu.edu/neuroscience/), Casey Henley.
 
