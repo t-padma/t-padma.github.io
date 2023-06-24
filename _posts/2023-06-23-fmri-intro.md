@@ -21,10 +21,11 @@ Brain function requires glucose as an energy source. Hemoglobin transports oxyge
 
 Therefore, the BOLD signal can be interpreted as **quantifying regional neuronal activity**.
 
-### Magnetic Resonance
-
-### BOLD fMRI
+### Magnetic Resonance and BOLD fMRI
 BOLD imaging is the most common method of fMRI.[^3]
+
+### Physics behind fMRI 
+
 
 
 
