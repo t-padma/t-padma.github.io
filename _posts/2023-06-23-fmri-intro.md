@@ -67,5 +67,5 @@ $$f_0 = \gamma B_0 $$
 [^2]: Ramani, Ramachandran (ed.), *Functional MRI: Basic Principles and Emerging Clinical Applications for Anesthesiology and the Neurological Sciences*, 1 (New York, 2018; online edn, Oxford Academic, 1 Jan. 2019)
 [^3]: Owen J. Arthurs, Simon Boniface, *How well do we understand the neural origins of the fMRI BOLD signal?* - Trends in Neurosciences, Vol 25 Issue 1
 [^4]: Britannica, The Editors of Encyclopaedia. "[magnetic resonance](https://www.britannica.com/science/magnetic-resonance)". Encyclopedia Britannica, 25 Jan. 2011. Accessed 24 June 2023. 
-
+[^5]: [What is fMRI?](http://fmri.ucsd.edu/Research/whatisfmri.html), Center for Functional MRI, UCSanDiego
 
