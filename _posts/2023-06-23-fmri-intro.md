@@ -57,8 +57,8 @@ The protons recover to their original state of orientation i.e. out of phase pre
 **Remarks** 
 * The frequency of precession ($f_0$), described by the *Larmor equation*, depends on the strength of magnetic field $B_0$. The *gyromagnetic ratio* $\gamma$ is a constant that is unique to each nucleus.
 $$f_0 = \gamma B_0 $$
-* The point at which $63%$ of the longitudinal magnetization is *recovered* is called **T1 time**.
-* The time at which $63%$ of the transverse magnetization is *lost* is called **T2 time**.
+* The point at which $63\%$ of the longitudinal magnetization is *recovered* is called **T1 time**.
+* The time at which $63\%$ of the transverse magnetization is *lost* is called **T2 time**.
 * The T1 and T2 times are unique to each tissue type image.
 
 ### Image formation in fMRI
