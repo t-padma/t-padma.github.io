@@ -2,7 +2,7 @@
 layout: article
 title: fMRI Studies
 mathjax: true
-tags: fmri_studies
+tags: fmri exp_design
 ---
 
 There are three different types of fMRI studies - Task activation studies, Regional CBF studies, and Connectivity studies.[^1]
