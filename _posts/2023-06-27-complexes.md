@@ -11,10 +11,10 @@ TDA deals with data that can be viewed as *finite metric spaces*. Such data sets
 
 *Notation as in [^1]*: $K$ is the simplicial complex on vertex set $S$. $\sigma$ denotes an arbitrary simplex in $K$. We use the notation $K_i$ to denote the set of all $i$-dimensional simplices in $K$. We assume that $S$ lies inside an unknown metric space $(X,d)$ such that $(S,d)$ is an induced metric space.  
 
-*Big picture:* Persistent homology is a tool that allows the encoding of shape information at different scales. At each individual scale value, we need to associate the shape information in the form of a simplicial complex. Finite metric spaces are not topologically interesting[^4], hence we try to "fill in the gaps" between points if they are "close enough". The idea is that if we build a simplicial complex $K$ on set $S$, then the homology of $K$ has to at least ``approximate" the homology of $X$. Hence the choice of how to construct the simplicial complex matters. 
+*Big picture:* Persistent homology is a tool that allows the encoding of shape information at different scales. At each individual scale value, we need to associate the shape information in the form of a simplicial complex. Finite metric spaces are not topologically interesting[^4], hence we try to "fill in the gaps" between points if they are "close enough". That way we can impose topological structures onto the data.[^5] The idea is that if we build a simplicial complex $K$ on set $S$, then the homology of $K$ has to at least ``approximate" the homology of $X$. Hence the choice of how to construct the simplicial complex matters. 
 
 ### \v{C}ech complex
-
+The **Aleksandrov-\v(C)ech** complex, commonly known as the
 ### Delaunay complex
 
 ### Alpha Complex
@@ -39,7 +39,7 @@ TDA deals with data that can be viewed as *finite metric spaces*. Such data sets
 [^2]: [Computational Algebraic Topology](https://people.maths.ox.ac.uk/nanda/cat/), Lecture notes by Prof. Vidit Nanda, Mathematical Institute, University of Oxford.
 [^3]: Nicole Lazar & Hyunnam Ryu (2021) The Shape of Things: Topological Data Analysis, CHANCE, 34:2, 59-64, DOI: 10.1080/09332480.2021.1915036
 [^4]: [A finite topological space is metrizable iff it is discrete](https://math.stackexchange.com/questions/3367163/a-finite-topological-space-is-metrizable-iff-it-is-discrete), Math StackExchange
-[^5]: [CS598: Computational Topology (Fall 09)](https://jeffe.cs.illinois.edu/teaching/comptop/2009/schedule.html), Lecture notes by [Prof. Jeff Erickson](https://jeffe.cs.illinois.edu/index.html), Dept. of Computer Science, UIUC.
+[^5]: Nov 11 notes under "Complexes and Homology", [CS598: Computational Topology (Fall 09)](https://jeffe.cs.illinois.edu/teaching/comptop/2009/schedule.html), Lecture notes by [Prof. Jeff Erickson](https://jeffe.cs.illinois.edu/index.html), Dept. of Computer Science, UIUC, Viewed on 06/27/2023. 
 
 
 
