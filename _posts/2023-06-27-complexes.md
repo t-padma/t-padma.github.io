@@ -11,8 +11,7 @@ TDA deals with data that can be viewed as *finite metric spaces*. Such data sets
 
 *Notation*: $K$ is the simplicial complex on vertex set $S$. $\sigma$ denotes an arbitrary simplex in $K$. We use the notation $K_i$ to denote the set of all $i$-dimensional simplices in $K$. We assume that $S$ lies inside an unknown metric space $(X,d)$ such that $(S,d)$ is an induced metric space.  
 
-*Big picture:* Persistent homology is a tool that allows the encoding of shape information at different scales. At each individual scale value, we need to associate the shape information in the form of a simplicial complex. The idea is that if we build a simplicial complex $K$ on set $S$, then the homology of $K$ has to at least ``approximate" the homology of $X$. Hence the choice of how to construct the simplicial complex matters. 
-
+*Big picture:* Persistent homology is a tool that allows the encoding of shape information at different scales. At each individual scale value, we need to associate the shape information in the form of a simplicial complex. Finite metric spaces are not topologically interesting[^4], hence we try to "fill in the gaps" between points if they are "close enough". The idea is that if we build a simplicial complex $K$ on set $S$, then the homology of $K$ has to at least ``approximate" the homology of $X$. Hence the choice of how to construct the simplicial complex matters. 
 
 ### Delaunay complex
 
