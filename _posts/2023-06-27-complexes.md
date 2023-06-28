@@ -27,8 +27,6 @@ The *Nerve Lemma* provides a theoretical guarantee on why the Cech complex is "c
 Let $\mathcal{A} = \lbrace A_1, \cdots, A_m \rbrace$ be a family of "nice" subsets covering a space $X$ such that all possible intersections are "topologically simple", then the topology of the nerve agrees with the topology of $X$ in certain ways.
 
 
-
-
 ### Delaunay complex
 
 ### Alpha Complex
