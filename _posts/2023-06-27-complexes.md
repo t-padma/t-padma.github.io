@@ -26,7 +26,7 @@ The *Nerve Lemma* provides a theoretical guarantee on why the Cech complex is "c
 
 Let $\mathcal{A} = \lbrace A_1, \cdots, A_m \rbrace$ be a family of "nice" subsets covering a space Euclidean $X$ such that all possible intersections are "topologically simple", then the topology of the nerve agrees with the topology of $X$ in certain ways. Despite the advantage of the Nerve Lemma, the Cech complex is not widely used due to a lack of computational feasibility.
 
-Assume $|S| = n$, then the worst case size (i.e. cardinality of the set $K$) of the simplicial complex associated with data is $\mathcal{O}(2^n)$. The number of steps required to associate the data to a simplicial complex is also $\mathcal{O}(2^n)$ since we have to check the intersection of all possible collections of simplices in $K$.
+Assume $\|S\| = n$, then the worst case size (i.e. cardinality of the set $K$) of the simplicial complex associated with data is $\mathcal{O}(2^n)$. The number of steps required to associate the data to a simplicial complex is also $\mathcal{O}(2^n)$ since we have to check the intersection of all possible collections of simplices in $K$.
 
 ### Rips complex
 
