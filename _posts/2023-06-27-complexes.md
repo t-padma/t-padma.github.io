@@ -22,6 +22,10 @@ $$
 \check{\mathcal{C}}(S; \epsilon) = \left\lbrace  \langle v_{j_0}, \cdots, v_{j_p} \rangle \subset S \quad : \quad \bigcap_{z=0}^p \mathcal{B}(v_{j_z}; \epsilon) \neq \emptyset \right\rbrace
 $$
 
+The *Nerve Lemma* provides a theoretical guarantee on why the Cech complex is "correct". There are different versions of the Nerve Lemma, but all of them have a similar idea which is given below[^6].
+
+Let $\mathcal{A} = \lbrace A_1, \cdots, A_m \rbrace$ be a family of "nice" subsets covering a space $X$ such that all possible intersections are "topologically simple", then the topology of the nerve agrees with the topology of $X$ in certain ways.
+
 
 
 
@@ -50,6 +54,6 @@ $$
 [^3]: Nicole Lazar & Hyunnam Ryu (2021) The Shape of Things: Topological Data Analysis, CHANCE, 34:2, 59-64, DOI: 10.1080/09332480.2021.1915036
 [^4]: [A finite topological space is metrizable iff it is discrete](https://math.stackexchange.com/questions/3367163/a-finite-topological-space-is-metrizable-iff-it-is-discrete), Math StackExchange
 [^5]: Nov 11 notes under "Complexes and Homology", [CS598: Computational Topology (Fall 09)](https://jeffe.cs.illinois.edu/teaching/comptop/2009/schedule.html), Lecture notes by [Prof. Jeff Erickson](https://jeffe.cs.illinois.edu/index.html), Dept. of Computer Science, UIUC, Viewed on 06/27/2023. 
-
+[^6]: (2008). A Topological Interlude. In: [Using the Borsuk–Ulam Theorem](https://doi.org/10.1007/978-3-540-76649-0_4). Universitext. Springer, Berlin, Heidelberg. 
 
 
