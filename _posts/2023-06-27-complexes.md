@@ -24,6 +24,7 @@ $$
 
 
 
+
 ### Delaunay complex
 
 ### Alpha Complex
