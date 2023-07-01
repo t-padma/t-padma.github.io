@@ -35,10 +35,10 @@ $$
 \mathcal{VR}(S; \epsilon) = \left\lbrace \sigma \subseteq S \quad : \quad \mathrm{d}(x,y) \leq 2\epsilon \quad \forall x,y \in \sigma \right\rbrace
 $$
 
-Given any $\epsilon > 0$, the Rips complex is said to approximate the Cech complex because the Rips complex at scale $\epsilon$ can be "sandwiched" between Cech complexes at scales $\epsilon$ and 2$\epsilon$. These bounds cannot be improved if $X$ is assumed to be an arbitrary metric space. The upper radius can be improved if the underlying space $X$ is Euclidean.
+Given any $\epsilon > 0$, the Rips complex is said to approximate the Cech complex because the Rips complex at scale $\epsilon$ can be "sandwiched" between Cech complexes at scales $\epsilon$ and 2$\epsilon$. These bounds cannot be improved if $X$ is assumed to be an arbitrary metric space. The upper radius can be improved if the underlying space $X$ is Euclidean.[^5]
 
 $$
-\check{\mathcal{C}}(S; \epsilon) \quad \subseteq \quad \mathcal{VR}(S; \epsilon) \quad \subseteq \quad \check{\mathcal{C}}(S; \frac{\sqrt{3}\epsilon}{2}) \quad \text{ when underlying metric space is Euclidean}
+\check{\mathcal{C}}(S; \epsilon) \quad \subseteq \quad \mathcal{VR}(S; \epsilon) \quad \subseteq \quad \check{\mathcal{C}}\left(S; \frac{\sqrt{3}\epsilon}{2} \right) \quad \text{ when underlying metric space is Euclidean}
 $$
 
 ### Delaunay complex
