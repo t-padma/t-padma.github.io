@@ -52,13 +52,13 @@ $$
 \mathcal{E} = \lbrace (i,j) \in S \times S : i \neq j \text{ and } \mathrm{d}(i,j) \leq 2 \epsilon \rbrace 
 $$
 
-2. Rips complex is the **clique complex** associated with the proximity graph $N_{\epsilon}(S)$. A clique complex,  also referred to as the **flag complex**, associated with the graph $N_{\epsilon}(S)$ is defined as follows:
+2. Rips complex is the **clique complex** associated with the proximity graph $N_{\epsilon}(S)$. A clique complex,  also referred to as the **flag complex**, associated with the graph $N_{\epsilon}(S)$ is defined by adding simplices as follows:
 
 $$
-\sigma \subseteq S \text{ is a simplex iff the vertices in } \sigma \text{ form a *clique* in }  N_{\epsilon}(S) 
+\sigma \subseteq S \text{ is a simplex iff the vertices in } \sigma \text{ form a clique in }  N_{\epsilon}(S)
 $$
 
-
+Despite the computational benefits, a major drawback of the Rips complex is that we do not have Nerve Lemma-like theoretical guarantees. However, a couple of weaker results can be found in the lecture notes by Prof. Jeff Erickson.[^5]
 
 ### Delaunay complex
 
