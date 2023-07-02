@@ -58,9 +58,11 @@ $$
 \sigma \subseteq S \text{ is a simplex iff the vertices in } \sigma \text{ form a clique in }  N_{\epsilon}(S)
 $$
 
-Despite the computational benefits, a major drawback of the Rips complex is that we do not have Nerve Lemma-like theoretical guarantees. However, a couple of weaker results can be found in the lecture notes by Prof. Jeff Erickson.[^5]
+Despite the computational benefits, one of the major drawbacks of the Rips complex is that we do not have Nerve Lemma-like theoretical guarantees. However, a couple of weaker results can be found in the lecture notes by Prof. Jeff Erickson.[^5]
 
 ### Delaunay complex
+
+
 
 ### Alpha Complex
 
