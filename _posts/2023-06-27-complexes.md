@@ -49,7 +49,7 @@ Assume a $p$-simplex $\sigma \subseteq S$ with $\|S\| = n$, the following are th
 1. Compute the **proximity graph** or $\epsilon$-**neighbourhood graph**, denoted as $N_{\epsilon}(S)$, associated to the dataset $S$ is a graph $(S, \mathcal{E})$ with edge set defined as
 
 $$ 
-\lbrace (i,j) \in S \times S : i \neq j \text{ and } \mathrm{d}(i,j) \leq 2 \epsilon \rbrace 
+\mathcal{E} = \lbrace (i,j) \in S \times S : i \neq j \text{ and } \mathrm{d}(i,j) \leq 2 \epsilon \rbrace 
 $$
 
 2. Rips complex is the **clique complex** associated with the proximity graph $N_{\epsilon}(S)$. A clique complex,  also referred to as the **flag complex**, associated with the graph $N_{\epsilon}(S)$ is defined as follows:
