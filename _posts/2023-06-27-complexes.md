@@ -42,8 +42,17 @@ $$
 $$
 
 Assume a $p$-simplex $\sigma \subseteq S$ with $\|S\| = n$, the following are the computational costs associated with Rips and Cech complexes:
-* In order to construct $\check{\mathcal{C}}(S; \epsilon)$, we have to check all possible $k$-set intersections for $ k = 1,2, \cdots, n$. Observe that there are $n \choose k$ many subsets of $S$ of size $k$. Hence there are $n \choose k$ many intersections that need to be checked. This implies that Cech complex construction takes **exponential time**. On the other hand, it is sufficient to check all possible pairwise intersections to construct the Rips complex. This clearly takes **polynomial time**.
-* However, the cardinality of the Cech complex or Rips complex is still **exponential**. This is because the worst case complex is $\mathcal{P}(S)$, powerset of $S$, in either of the two cases.
+* In order to construct $\check{\mathcal{C}}(S; \epsilon)$, we have to check all possible $k$-set intersections for $k = 1,2, \cdots, n$. Observe that there are $n \choose k$ many subsets of $S$ of size $k$. Hence there are $n \choose k$ many intersections that need to be checked. This implies that Cech complex construction takes **exponential time**. On the other hand, it is sufficient to check all possible pairwise intersections to construct the Rips complex. This clearly takes **polynomial time**.
+* However, the cardinality of the Cech complex or Rips complex is still **exponential**. This is because the worst case complex is $\mathcal{P}(S)$, powerset of $S$, in either of the two cases. Hence one usually computes the Rips complex up to some dimension $p << n$.
+
+**Rips complex construction**
+1. Compute the *proximity graph* or $\epsilon$-*neighbourhood graph*, denoted as $N_{\epsilon}(S)$, associated to the dataset $S$ is a graph $(S, \mathcal{E})$ with edge set defined as
+
+$$ 
+\lbrace (i,j) \in S \times S : i \neq j \text{ and } \mathrm{d}(i,j) \leq 2 \epsilon \rbrace 
+$$
+
+2. Rips complex is the **clique complex** associated with the proximity graph $N_{\epsilon}(S)$. 
 
 ### Delaunay complex
 
