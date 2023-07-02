@@ -46,7 +46,7 @@ Assume a $p$-simplex $\sigma \subseteq S$ with $\|S\| = n$, the following are th
 * However, the cardinality of the Cech complex or Rips complex is still **exponential**. This is because the worst case complex is $\mathcal{P}(S)$, powerset of $S$, in either of the two cases. Hence one usually computes the Rips complex up to some dimension $p << n$.
 
 **Rips complex construction**
-1. Compute the **proximity graph** or $\epsilon$-**neighbourhood graph**, denoted as $N_{\epsilon}(S)$, associated to the dataset $S$ is a graph $(S, \mathcal{E})$ with edge set defined as
+1. Compute the **proximity graph** or $\epsilon$-**neighbourhood graph**, denoted as $N_{\epsilon}(S)$, associated to the dataset $S$. This will be a graph $N_{\epsilon}(S) = (S, \mathcal{E})$ with edge set $\mathcal{E}$ defined as
 
 $$ 
 \mathcal{E} = \lbrace (i,j) \in S \times S : i \neq j \text{ and } \mathrm{d}(i,j) \leq 2 \epsilon \rbrace 
