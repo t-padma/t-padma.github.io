@@ -35,11 +35,15 @@ $$
 \mathcal{VR}(S; \epsilon) = \left\lbrace \sigma \subseteq S \quad : \quad \mathrm{d}(x,y) \leq 2\epsilon \quad \forall x,y \in \sigma \right\rbrace
 $$
 
-Given any $\epsilon > 0$, the Rips complex is said to approximate the Cech complex because the Rips complex at scale $\epsilon$ can be "sandwiched" between Cech complexes at scales $\epsilon$ and 2$\epsilon$. These bounds cannot be improved if $X$ is assumed to be an arbitrary metric space. The upper radius can be improved if the underlying space $X$ is Euclidean.[^5]
+Given any $\epsilon > 0$, the Rips complex is said to approximate the Cech complex because the Rips complex at scale $\epsilon$ can be "sandwiched" between Cech complexes at scales $\epsilon$ and 2 $\epsilon$. These bounds cannot be improved if $X$ is assumed to be an arbitrary metric space. The upper radius can be improved to $\frac{\sqrt{3}\epsilon}{2}$ if the underlying space $X$ is Euclidean.[^5]
 
 $$
 \check{\mathcal{C}}(S; \epsilon) \quad \subseteq \quad \mathcal{VR}(S; \epsilon) \quad \subseteq \quad \check{\mathcal{C}}\left(S; \frac{\sqrt{3}\epsilon}{2} \right) \quad \text{ when underlying metric space is Euclidean}
 $$
+
+Assume a $p$-simplex $\sigma \subseteq S$ with $\|S\| = n$, the following are the computational costs associated with Rips and Cech complexes:
+* In order to construct $\check{\mathcal{C}}(S; \epsilon)$, we have to check all possible $k$-set intersections for $ k = 1,2, \cdots, n$. Observe that there are $n \choose k$ many subsets of $S$ of size $k$. Hence there are $n \choose k$ many intersections that need to be checked. This implies that Cech complex construction takes **exponential time**. On the other hand, it is sufficient to check all possible pairwise intersections to construct the Rips complex. This clearly takes **polynomial time**.
+* However, the cardinality of the Cech complex or Rips complex is still **exponential**. This is because the worst case complex is $\mathcal{P}(S)$, powerset of $S$, in either of the two cases.
 
 ### Delaunay complex
 
