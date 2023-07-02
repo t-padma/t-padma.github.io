@@ -13,7 +13,7 @@ TDA deals with data that can be viewed as *finite metric spaces*. Such data sets
 **Notations used in the post:**
 Let $S$ be the finite dataset (also a metric space) at hand. $K$ is the simplicial complex on vertex set $S$ with $|S| < \infty$. Note that $\sigma = \langle v_{j_0},  \cdots, v_{j_p}\rangle$ denotes a $p$-simplex in $K$ i.e. $\sigma$ is the convex hull associated with the vertices $\lbrace v_{j_0}, \cdots, v_{j_p} \rbrace \subset S$. We use the notation $K_i$ to denote the set of all $i$-dimensional simplices in $K$. We assume that the data set $S$ lies inside an unknown metric space $(X,d)$ such that $(S,d)$ is an induced metric space.  
 
-**Big picture:** Persistent homology is a tool that allows the encoding of shape information at different scales. At each individual scale value, we need to store the shape information in the form of a simplicial complex. Finite metric spaces are not topologically interesting[^4], hence we try to "fill in the gaps" between data points if they are "close enough" in some sense. That way we will be able to impose topological structures onto the data.[^5] The idea is that if we build a simplicial complex $K$ on set $S$, then the homology of $K$ has to at least ``approximate" the homology of $X$. Hence the choice of how to construct the simplicial complex matters. 
+**Big picture:** Persistent homology is a tool that allows the encoding of shape information at different scales. At each scale value, we need to store the shape information in the form of a simplicial complex. Finite metric spaces are not topologically interesting[^4], hence we try to "fill in the gaps" between data points if they are "close enough" in some sense. That way we will be able to impose topological structures onto the data.[^5] The idea is that if we build a simplicial complex $K$ on set $S$, then the homology of $K$ has to at least ``approximate" the homology of $X$. Hence the choice of how to construct the simplicial complex matters. 
 
 ### $\check{\mathcal{C}}(S; \epsilon)$: Cech complex at scale $\epsilon \> 0$ 
 Given a fixed positive $\epsilon \in \mathbb{R}$, the **Aleksandrov-Cech** complex, also commonly known as the **Cech complex**, at scale $\epsilon$ is defined as the **intersection complex** or **nerve** of the $\epsilon$-balls associated with set $S$. The resource [Cech Complex playground](https://sauln.github.io/blog/nerve-playground/) is a useful visualization tool. The Cech complex, denoted by $\check{\mathcal{C}}(S, \epsilon)$, is defined as follows:
@@ -29,7 +29,7 @@ Let $\mathcal{A} = \lbrace A_1, \cdots, A_m \rbrace$ be a family of "nice" subse
 Assume $\|S\| = n$, then the worst case size (i.e. cardinality of the set $K$) of the simplicial complex associated with data is $\mathcal{O}(2^n)$. The number of steps required to associate the data to a simplicial complex is also $\mathcal{O}(2^n)$ since we have to check the intersection of all possible collections of simplices in $K$.
 
 ### $\mathcal{VR}(S; \epsilon)$: Vietoris-Rips complex at scale $\epsilon \> 0$
-During the time when homology theory was still new, Leopold Vietoris used a complex that is similar to the Vietoris-Rips complex to model metric spaces using finite simplicial complexes. The Vietoris-Rips complex, often called the Rips complex, is now commonly used in TDA due to its computational benefits over the Cech complex. The Rips complex associated with the dataset $S$ is defined as follows:
+When homology theory was still new, Leopold Vietoris used a complex that is similar to the Vietoris-Rips complex to model metric spaces using finite simplicial complexes. The Vietoris-Rips complex, often called the Rips complex, is now commonly used in TDA due to its computational benefits over the Cech complex. The Rips complex associated with the dataset $S$ is defined as follows:
 
 $$
 \mathcal{VR}(S; \epsilon) = \left\lbrace \sigma \subseteq S \quad : \quad \mathrm{d}(x,y) \leq 2\epsilon \quad \forall x,y \in \sigma \right\rbrace
@@ -52,7 +52,13 @@ $$
 \lbrace (i,j) \in S \times S : i \neq j \text{ and } \mathrm{d}(i,j) \leq 2 \epsilon \rbrace 
 $$
 
-2. Rips complex is the **clique complex** associated with the proximity graph $N_{\epsilon}(S)$. 
+2. Rips complex is the **clique complex** associated with the proximity graph $N_{\epsilon}(S)$. A clique complex,  also referred to as the **flag complex**, associated with the graph $N_{\epsilon}(S)$ is defined as follows:
+
+$$
+\sigma \subseteq S \text{ is a simplex iff the vertices in } \sigma \text{ form a *clique* in }  N_{\epsilon}(S) 
+$$
+
+
 
 ### Delaunay complex
 
