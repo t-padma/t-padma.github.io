@@ -16,7 +16,7 @@ Let $S$ be the finite dataset (also a metric space) at hand. $K$ is the simplici
 A *finite* cover of a topological space, given by $\mathcal{U} = \lbrace U_s \rbrace_{s \in S}$, defines a special simplicial complex $N(\mathcal{U})$ called the **Nerve of** $\mathbf{\mathcal{U}}$ as follows:[^7]
 
 $$
-\left\lbrace \langle v_{j_0},  \cdots, v_{j_p}\rangle \in \mathcal{U} : \lbrace v_{j_0},  \cdots, v_{j_p}\rbrace \subseteq S \text{ and } \bigcap_{z=0}^p \neq \emptyset \right\rbrace
+N(\mathcal{U}) = \left\lbrace \langle v_{j_0},  \cdots, v_{j_p}\rangle : \lbrace v_{j_0},  \cdots, v_{j_p}\rbrace \subseteq S \text{ and } \bigcap_{z=0}^p \neq \emptyset \right\rbrace
 $$
 
 **Big picture:** Persistent homology is a tool that allows the encoding of shape information at different scales. At each scale value, we need to store the shape information in the form of a simplicial complex. Finite metric spaces are not topologically interesting[^4], hence we try to "fill in the gaps" between data points if they are "close enough" in some sense. That way we will be able to impose topological structures onto the data.[^5] The idea is that if we build a simplicial complex $K$ on set $S$, then the homology of $K$ has to at least ``approximate" the homology of $X$. Hence the choice of how to construct the simplicial complex matters. 
