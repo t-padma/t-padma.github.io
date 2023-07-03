@@ -77,13 +77,13 @@ $$
 
 **Remark:** $\partial \mathcal{B}$ and $\mathrm{Int}(\mathcal{B})$ denote the boundary and interior of $\mathcal{B}$ respectively while the symbol $\sqcup$ refers to disjoint union of sets. Given a Delaunay simplex $\langle v_0, \cdots v_p \rangle$ for $p \leq d$, we can visualize it as $p+1$ points lying on the surface of a sphere in $\mathbb{R}^d$. Below is the example of a case that is easy to draw: Consider $p=d=2$ i.e. we have a $2$-simplex $\langle a, b, c\rangle$ in $\mathbb{R^2}$ which is Delaunay.
 
+![del](/images/del.png)
+
 Then, the **Delaunay complex** associated with $S$ is defined as:
 
 $$
 \mathrm{Del}(S, \mathbb{R}^d) = \lbrace \sigma : \sigma \in S \text{ and } \sigma \text{is Delaunay} \rbrace
 $$
-
-
 
 ### Alpha Complex
 
