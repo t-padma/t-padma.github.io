@@ -67,8 +67,15 @@ $$
 Despite the computational benefits, one of the major drawbacks of the Rips complex is that we do not have Nerve Lemma-like theoretical guarantees. However, a couple of weaker results can be found in the lecture notes by Prof. Jeff Erickson.[^5]
 
 ### Delaunay complex
+Delaunay complex is a kind **sparse** complex i.e. it does not contain "too many" simplices. Observe that even though the Rips complex construction takes polynomial time, the size of the Rips or Cech complex is still exponential which can be very difficult to handle in practice.[^7] This forms a simple motivation to search for complexes that are "sparse". For now, we assume $X = \mathbb{R}^d$.
 
+A $p$-simplex $\sigma$ is said to be *Delaunay* if the vertices of $\sigma$ lie in $S$ and there exists an open ball $\mathcal{B}$ satisfying the following conditions:
 
+$$
+S \subseteq \partial \mathcal{B} \text{ and } S \cup \mathrm{Int}(\mathcal{B}) = \emptyset \text{ where } \mathcal{B} = \partial \mathcal{B} \sqcup \mathrm{Int}(\mathcal{B})
+$$
+
+**Remark:** $\partial \mathcal{B}$ and $\mathrm{Int}(\mathcal{B})$ denote the boundary and interior of $\mathcal{B}$ respectively while the symbol $\sqcup$ refers to disjoint union of sets.
 
 ### Alpha Complex
 
@@ -94,5 +101,7 @@ Despite the computational benefits, one of the major drawbacks of the Rips compl
 [^4]: [A finite topological space is metrizable iff it is discrete](https://math.stackexchange.com/questions/3367163/a-finite-topological-space-is-metrizable-iff-it-is-discrete), Math StackExchange
 [^5]: Nov 11 notes under "Complexes and Homology", [CS598: Computational Topology (Fall 09)](https://jeffe.cs.illinois.edu/teaching/comptop/2009/schedule.html), Lecture notes by [Prof. Jeff Erickson](https://jeffe.cs.illinois.edu/index.html), Dept. of Computer Science, UIUC, Viewed on 06/27/2023. 
 [^6]: (2008). A Topological Interlude. In: [Using the Borsuk–Ulam Theorem](https://doi.org/10.1007/978-3-540-76649-0_4). Universitext. Springer, Berlin, Heidelberg. 
+[^7]: Dey, T., & Wang, Y. (2022). [*Computational Topology for Data Analysis*](10.1017/9781009099950). Cambridge: Cambridge University Press. 
+
 
 
