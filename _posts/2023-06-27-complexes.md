@@ -72,7 +72,7 @@ Delaunay complex is a **sparse** complex i.e. it does not contain "too many" sim
 A $p$-simplex $\sigma$ is said to be *Delaunay* if the vertices of $\sigma$ lie in $S$ and there exists an open ball $\mathcal{B}$ satisfying the following conditions:
 
 $$
-S \subseteq \partial \mathcal{B} \text{ and } S \cup \mathrm{Int}(\mathcal{B}) = \emptyset \text{ where } \mathcal{B} = \partial \mathcal{B} \sqcup \mathrm{Int}(\mathcal{B})
+S \subseteq \partial \mathcal{B} \text{ and } S \cap \mathrm{Int}(\mathcal{B}) = \emptyset \text{ where } \mathcal{B} = \partial \mathcal{B} \sqcup \mathrm{Int}(\mathcal{B})
 $$
 
 **Remark:** $\partial \mathcal{B}$ and $\mathrm{Int}(\mathcal{B})$ denote the boundary and interior of $\mathcal{B}$ respectively while the symbol $\sqcup$ refers to disjoint union of sets. Given a Delaunay simplex $\langle v_0, \cdots v_p \rangle$ for $p \leq d$, we can visualize it as $p+1$ points lying on the surface of a sphere in $\mathbb{R}^d$. Below is the example of a case that is easy to draw: Consider $p=d=2$ i.e. we have a $2$-simplex $\langle a, b, c\rangle$ in $\mathbb{R^2}$ which is Delaunay.
