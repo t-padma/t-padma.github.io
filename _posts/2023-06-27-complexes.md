@@ -82,7 +82,7 @@ $$
 Then, the **Delaunay complex** associated with $S$ is defined as:
 
 $$
-\mathrm{Del}(S, \mathbb{R}^d) = \lbrace \sigma : \sigma \in S \text{ and } \sigma \text{is Delaunay} \rbrace
+\mathrm{Del}(S, \mathbb{R}^d) = \lbrace \sigma : \sigma \in S \text{ and } \sigma \text{ is Delaunay } \rbrace
 $$
 
 ### Alpha Complex
