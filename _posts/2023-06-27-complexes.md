@@ -2,7 +2,7 @@
 layout: article
 title: Simplicial Complexes
 mathjax: true
-tags: intro tda
+tags: intro tda complexes
 ---
 
 ### Introduction and Motivation
