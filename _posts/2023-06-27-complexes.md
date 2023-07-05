@@ -11,7 +11,7 @@ The contents of this post are predominantly based on the review paper by Otter e
 TDA deals with data that can be viewed as *finite metric spaces*. Such data sets are also referred to as point-cloud data sets. For instance, networks and digital images can be modeled as finite metric spaces. The lecture notes by [Prof. Vidit Nanda](https://people.maths.ox.ac.uk/nanda/)[^2] were extremely helpful in learning some basics of computational topology. The article by Lazar and Ryu[^3] does a really good job of giving the big picture for TDA. Now, given a finite set of points, we wish to encode the "shape" information of the data into a simplicial complex which is much easier to handle mathematically. Simplicial complexes give us the benefit of exploiting the well-understood field of simplicial homology which is known to be better in terms of computations. 
 
 **Notations used in the post:**
-Let $S$ be the finite dataset (also a metric space) at hand. $K$ is the simplicial complex on vertex set $S$ with $|S| < \infty$. Note that $\sigma = \langle v_{j_0},  \cdots, v_{j_p}\rangle$ denotes a $p$-simplex in $K$ i.e. $\sigma$ is the convex hull associated with the vertices $\lbrace v_{j_0}, \cdots, v_{j_p} \rbrace \subset S$. We use the notation $K_i$ to denote the set of all $i$-dimensional simplices in $K$. We assume that the data set $S$ lies inside an unknown metric space $(X,d)$ such that $(S,d)$ is an induced metric space. 
+Let $S$ be the finite dataset (also a metric space) at hand. $K$ is the simplicial complex on vertex set $S$ with $|S| = n < \infty$. Note that $\sigma = \langle v_{j_0},  \cdots, v_{j_p}\rangle$ denotes a $p$-simplex in $K$ i.e. $\sigma$ is the convex hull associated with the vertices $\lbrace v_{j_0}, \cdots, v_{j_p} \rbrace \subset S$. We use the notation $K_i$ to denote the set of all $i$-dimensional simplices in $K$. We assume that the data set $S$ lies inside an unknown metric space $(X,d)$ such that $(S,d)$ is an induced metric space. 
 
 A *finite* cover of a topological space, given by $\mathcal{U} = \lbrace U_s \rbrace_{s \in S}$, defines a special simplicial complex $N(\mathcal{U})$ called the **Nerve of** $\mathbf{\mathcal{U}}$ as follows:[^7]
 
@@ -85,6 +85,12 @@ $$
 \mathrm{Del}(S, \mathbb{R}^d) = \lbrace \sigma : \sigma \in S \text{ and } \sigma \text{ is Delaunay } \rbrace
 $$
 
+Another way of defining the Delaunay complex, which is what I focus on here after, involves the **Voronoi Diagram** of the data set $S$. [^8] The Delaunay complex of a finite set $S$ is the nerve of the Voronoi diagram of $S$. Let $S = \lbrace s_1, s_2, \cdots, s_n \rbrace \subset \mathbb{R}^d$ be a set with $n$ *distinct points*. The define the **Voronoi cell** of $s_i$, $\mathcal{V}(s_i, S)$, as the locus of all points in $\mathbb{R}^d$ that is closest to $s_i$ than any other $s_j$ for $j \neq i$.
+
+$$
+\mathcal{V}(s_i, S) = \lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert  \forall p_j \in S-\lbrace s_i \rbrace \rbrace
+$$
+
 ### Alpha Complex
 
 ### Witness complex
@@ -110,6 +116,6 @@ $$
 [^5]: Nov 11 notes under "Complexes and Homology", [CS598: Computational Topology (Fall 09)](https://jeffe.cs.illinois.edu/teaching/comptop/2009/schedule.html), Lecture notes by [Prof. Jeff Erickson](https://jeffe.cs.illinois.edu/index.html), Dept. of Computer Science, UIUC, Viewed on 06/27/2023. 
 [^6]: (2008). A Topological Interlude. In: [Using the Borsuk–Ulam Theorem](https://doi.org/10.1007/978-3-540-76649-0_4). Universitext. Springer, Berlin, Heidelberg. 
 [^7]: Dey, T., & Wang, Y. (2022). [*Computational Topology for Data Analysis*](10.1017/9781009099950). Cambridge: Cambridge University Press. 
-
+[^8]: Boissonnat, Jean-Daniel, Frédéric Chazal, and Mariette Yvinec. 2018. [*Geometric and Topological Inference*](). Cambridge: Cambridge University Press.
 
 
