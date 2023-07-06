@@ -69,6 +69,32 @@ Despite the computational benefits, one of the major drawbacks of the Rips compl
 ### $\mathrm{Del}(S, \mathbb{R}^d)$: Delaunay complex
 Delaunay complex is a **sparse** complex i.e. it does not contain "too many" simplices. Observe that even though the Rips complex construction takes polynomial time, the size of the Rips or Cech complex is still exponential which can be very difficult to handle in practice.[^7] This forms a simple motivation to search for complexes that are "sparse". For now, we assume $X = \mathbb{R}^d$.
 
+There are two equivalent ways of defining the Delaunay complex - one involves the **Voronoi Diagram** of the data set $S$ and the other is more abstract but becomes more understandable once we understand the first definition. [^8] The **Delaunay complex** of a finite set $S$ is the nerve of the Voronoi diagram of $S$. Let $S = \lbrace s_1, s_2, \cdots, s_n \rbrace \subset \mathbb{R}^d$ be a set with $n$ *distinct points*. The define the **Voronoi cell** of $s_i$, $\mathcal{V}(s_i, S)$, as the locus of all points in $\mathbb{R}^d$ that is closest to $s_i$ than any other $s_j$ for $j \neq i$.
+
+$$
+\mathcal{V}(s_i, S) = \left\lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \quad \forall s_j \in S-\lbrace s_i \rbrace \right\rbrace = \bigcap_{j \neq i} \lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \rbrace
+$$
+
+Observe that the Voronoi cells form a cover for the underlying space in such a way that the interiors of these cells are pairwise disjoint.
+
+$$
+\mathbb{R}^d = \bigcup_{i=1}^n \mathcal{V}(s_i, S) \text{ and } \mathrm{Int}(\mathcal{V}(s_i, S)) \cap \mathrm{Int}(\mathcal{V}(s_j, S)) \text{ for } i \neq j
+$$
+
+The collection of Voronoi cells $\lbrace \mathcal{V}(s_i) \rbrace_{i=1}^n$ and their faces constitute the **Voronoi Diagram** of $P$, denoted as $\mathcal{V}(S)$. Nerve of the cover associated with this diagram gives the abstract simplicial complex called **Delaunay Complex**.
+
+#### Mathematical structure of $\mathcal{V}(S)$
+The Voronoi diagram of $S$ is a mathematical structure called **Cell Complex** which can be thought of as the generalization of a simplicial complex. [^8] Observe that a simplicial complex $K$ is made of simplices which are all, in general, said to be the *faces* of $K$. Similarly, a cell complex $C$ is made up of "special" *faces* that satisfy the properties that the simplices in $K$ satisfy. Let $f, g \in C$, then
+
+1. Any face of $f$ is a face of $C$.
+2. $f \cap g = \emptyset$ OR $f \cap g$ is a common face of both $f$ and $g$.
+
+The "specialty" of these faces is that each one is a closed convex set called **convex polyhedron**, which can be viewed as a generalized simplex. However, unlike (finite) simplices, convex polyhedra may or may not be bounded. Another way of adding simplices to the Delaunay complex (other than the nerve definition), is by using the *Empty ball property*.
+
+**Lemma**[^8] Any subset $\sigma \in S$ is a simplex in $\mathrm{Del}(S, \mathbb{R}^d)$ *iff* it has a circumscribing ball $\mathcal{B}$ with no points of $S$ in the interior of $\mathcal{B}$.
+
+Using the above lemma, the following is an *alternate way* of defining the Delaunay complex. 
+
 A $p$-simplex $\sigma$ is said to be *Delaunay* if the vertices of $\sigma$ lie in $S$ and there exists an open ball $\mathcal{B}$ satisfying the following conditions:
 
 $$
@@ -84,28 +110,6 @@ Then, the **Delaunay complex** associated with $S$ is defined as:
 $$
 \mathrm{Del}(S, \mathbb{R}^d) = \lbrace \sigma : \sigma \in S \text{ and } \sigma \text{ is Delaunay } \rbrace
 $$
-
-Another way of defining the Delaunay complex, which is what I focus on here after, involves the **Voronoi Diagram** of the data set $S$. [^8] The **Delaunay complex** of a finite set $S$ is the nerve of the Voronoi diagram of $S$. Let $S = \lbrace s_1, s_2, \cdots, s_n \rbrace \subset \mathbb{R}^d$ be a set with $n$ *distinct points*. The define the **Voronoi cell** of $s_i$, $\mathcal{V}(s_i, S)$, as the locus of all points in $\mathbb{R}^d$ that is closest to $s_i$ than any other $s_j$ for $j \neq i$.
-
-$$
-\mathcal{V}(s_i, S) = \left\lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \quad \forall s_j \in S-\lbrace s_i \rbrace \right\rbrace = \bigcap_{j \neq i} \lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \rbrace
-$$
-
-Observe that the Voronoi cells form a cover for the underlying space in such a way that the interiors of these cells are pairwise disjoint.
-
-$$
-\mathbb{R}^d = \bigcup_{i=1}^n \mathcal{V}(s_i, S) \text{ and } \mathrm{Int}(\mathcal{V}(s_i, S)) \cap \mathrm{Int}(\mathcal{V}(s_j, S)) \text{ for } i \neq j
-$$
-
-The collection of Voronoi cells $\lbrace \mathcal{V}(s_i) \rbrace_{i=1}^n$ and their faces constitute the **Voronoi Diagram** of $P$, denoted as $\mathcal{V}(S)$.
-
-#### Mathematical structure of $\mathcal{V}(S)$
-The Voronoi diagram of $S$ is a mathematical structure called **Cell Complex** which can be thought of as the generalization of a simplicial complex. [^8] Observe that a simplicial complex $K$ is made of simplices which are all, in general, said to be the *faces* of $K$. Similarly, a cell complex $C$ is made up of "special" *faces* that satisfy the properties that the simplices in $K$ satisfy. Let $f, g \in C$, then
-
-1. Any face of $f$ is a face of $C$.
-2. $f \cap g = \emptyset$ OR $f \cap g$ is a common face of both $f$ and $g$.
-
-The "specialty" of these faces is that each one is a closed convex set called **convex polyhedron**, which can be viewed as a generalized simplex. However, unlike (finite) simplices, convex polyhedra may or may not be bounded. 
 
 ### Alpha Complex
 
