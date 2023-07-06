@@ -98,6 +98,15 @@ $$
 $$
 
 The collection of Voronoi cells $\lbrace \mathcal{V}(s_i) \rbrace_{i=1}^n$ and their faces constitute the **Voronoi Diagram** of $P$, denoted as $\mathcal{V}(S)$.
+
+#### Mathematical structure of $\mathcal{V}(S)$
+The Voronoi diagram of $S$ is a mathematical structure called **Cell Complex** which can be thought of as the generalization of a simplicial complex. [^8] Observe that a simplicial complex $K$ is made of simplices which are all, in general, the faces of $K$. Similarly, a cell complex $C$ is made up of "special" *faces* that satisfy the exact same properties that the simplices in $K$ satisfy. Let $f, g \in C$, then
+
+* Any face of $f$ is a face of $C$.
+* $f \cap g = \emptyset$ OR $f \cap g$ is a common face of both $f$ and $g$.
+
+The "specialty" of these faces is that each one is a **convex polyhedron**, which can be seen as a generalized simplex.
+
 ### Alpha Complex
 
 ### Witness complex
