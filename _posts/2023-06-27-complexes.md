@@ -91,7 +91,7 @@ The Voronoi diagram of $S$ is a mathematical structure called **Cell Complex** w
 
 The "specialty" of these faces is that each one is a closed convex set called **convex polyhedron**, which can be viewed as a generalized simplex. However, unlike (finite) simplices, convex polyhedra may or may not be bounded. Another way of adding simplices to the Delaunay complex (other than the nerve definition), is by using the *Empty ball property*.
 
-**Lemma**[^8] Any subset $\sigma \in S$ is a simplex in $\mathrm{Del}(S, \mathbb{R}^d)$ *iff* it has a circumscribing ball $\mathcal{B}$ with no points of $S$ in the interior of $\mathcal{B}$.
+**Lemma (Empty ball property)**[^8] Any subset $\sigma \in S$ is a simplex in $\mathrm{Del}(S, \mathbb{R}^d)$ *iff* it has a circumscribing ball $\mathcal{B}$ with no points of $S$ in the interior of $\mathcal{B}$.
 
 Using the above lemma, the following is an *alternate way* of defining the Delaunay complex. 
 
@@ -110,6 +110,7 @@ Then, the **Delaunay complex** associated with $S$ is defined as:
 $$
 \mathrm{Del}(S, \mathbb{R}^d) = \lbrace \sigma : \sigma \in S \text{ and } \sigma \text{ is Delaunay } \rbrace
 $$
+
 
 ### Alpha Complex
 
