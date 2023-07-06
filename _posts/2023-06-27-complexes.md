@@ -85,7 +85,7 @@ $$
 \mathrm{Del}(S, \mathbb{R}^d) = \lbrace \sigma : \sigma \in S \text{ and } \sigma \text{ is Delaunay } \rbrace
 $$
 
-Another way of defining the Delaunay complex, which is what I focus on here after, involves the **Voronoi Diagram** of the data set $S$. [^8] The Delaunay complex of a finite set $S$ is the nerve of the Voronoi diagram of $S$. Let $S = \lbrace s_1, s_2, \cdots, s_n \rbrace \subset \mathbb{R}^d$ be a set with $n$ *distinct points*. The define the **Voronoi cell** of $s_i$, $\mathcal{V}(s_i, S)$, as the locus of all points in $\mathbb{R}^d$ that is closest to $s_i$ than any other $s_j$ for $j \neq i$.
+Another way of defining the Delaunay complex, which is what I focus on here after, involves the **Voronoi Diagram** of the data set $S$. [^8] The **Delaunay complex** of a finite set $S$ is the nerve of the Voronoi diagram of $S$. Let $S = \lbrace s_1, s_2, \cdots, s_n \rbrace \subset \mathbb{R}^d$ be a set with $n$ *distinct points*. The define the **Voronoi cell** of $s_i$, $\mathcal{V}(s_i, S)$, as the locus of all points in $\mathbb{R}^d$ that is closest to $s_i$ than any other $s_j$ for $j \neq i$.
 
 $$
 \mathcal{V}(s_i, S) = \left\lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \quad \forall s_j \in S-\lbrace s_i \rbrace \right\rbrace = \bigcap_{j \neq i} \lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \rbrace
@@ -100,12 +100,12 @@ $$
 The collection of Voronoi cells $\lbrace \mathcal{V}(s_i) \rbrace_{i=1}^n$ and their faces constitute the **Voronoi Diagram** of $P$, denoted as $\mathcal{V}(S)$.
 
 #### Mathematical structure of $\mathcal{V}(S)$
-The Voronoi diagram of $S$ is a mathematical structure called **Cell Complex** which can be thought of as the generalization of a simplicial complex. [^8] Observe that a simplicial complex $K$ is made of simplices which are all, in general, the faces of $K$. Similarly, a cell complex $C$ is made up of "special" *faces* that satisfy the exact same properties that the simplices in $K$ satisfy. Let $f, g \in C$, then
+The Voronoi diagram of $S$ is a mathematical structure called **Cell Complex** which can be thought of as the generalization of a simplicial complex. [^8] Observe that a simplicial complex $K$ is made of simplices which are all, in general, said to be the *faces* of $K$. Similarly, a cell complex $C$ is made up of "special" *faces* that satisfy the properties that the simplices in $K$ satisfy. Let $f, g \in C$, then
 
-* Any face of $f$ is a face of $C$.
-* $f \cap g = \emptyset$ OR $f \cap g$ is a common face of both $f$ and $g$.
+1. Any face of $f$ is a face of $C$.
+2. $f \cap g = \emptyset$ OR $f \cap g$ is a common face of both $f$ and $g$.
 
-The "specialty" of these faces is that each one is a **convex polyhedron**, which can be seen as a generalized simplex.
+The "specialty" of these faces is that each one is a closed convex set called **convex polyhedron**, which can be viewed as a generalized simplex. However, unlike (finite) simplices, convex polyhedra may or may not be bounded. 
 
 ### Alpha Complex
 
