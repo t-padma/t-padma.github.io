@@ -115,7 +115,7 @@ $$
 Given the definition of Delaunay simplices, it is natural to wonder if the Delaunay complex can exist for a specific dataset $S$. If it exists, what theoretical guarantees or benefits does it provide? The facts mentioned below[^7], summarize without proof, the "niceness" of Delaunay complex in certain scenarios:
 
 * Every *non-degenerate point set*[^9] $S$ in $\mathbb{R}^d$ admits a *unique* Delaunay complex.
-* Points in $S$, with $|S| = n$, are said to be in *general position w.r.t. spheres* if no $d+2$-size subsets of $S$ lie on the same hypersphere[^10]. This ensures that $\mathrm{Del}(S, \mathbb{R}^d)$ can be embedded in $\mathbb{R}^d$.
+* Points in $S$, with $\lvert S\rvert = n$, are said to be in *general position w.r.t. spheres* if no $d+2$-size subsets of $S$ lie on the same hypersphere[^10]. This ensures that $\mathrm{Del}(S, \mathbb{R}^d)$ can be embedded in $\mathbb{R}^d$.
 
 **Theorem:** If points in $S$ are in *general position w.r.t spheres*, then $\mathrm{Del}(S, \mathbb{R}^d)$ has a natural embedding in $\mathbb{R}^d$. This embedding is a triangulation of $S$ called the **Delaunay triangulation of $S$**. This triangulation can be proved to be "optimal" in certain ways.[^7]
 
