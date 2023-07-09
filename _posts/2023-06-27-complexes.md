@@ -128,7 +128,7 @@ One of the most fundamental assumptions in TDA is that the underlying space $X$ 
 #### Limitations
 Due to the different optimal properties listed in the textbook by Dey and Wang[^7], this complex is used mostly while working with $X = \mathbb{R}^2$ or $\mathbb{R}^3$. However, computations in $\mathbb{R}^d$ for $d \geq 4$ are time intensive and hence not yet a widely used complex in higher dimensions. 
 
-**Note:** Prof. Peter Bubenik's website[^11] has some useful R resources for TDA. In particular, it has an R worksheet on how to generate Voronoi diagrams and Delaunay complexes.
+**Note:** Prof. [Peter Bubenik's](https://people.clas.ufl.edu/peterbubenik/) website[^11] has some useful R resources for TDA. In particular, it has an R worksheet on how to generate Voronoi diagrams and Delaunay complexes.
 ### Alpha Complex
 
 ### Witness complex
