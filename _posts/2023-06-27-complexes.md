@@ -111,6 +111,13 @@ $$
 \mathrm{Del}(S, \mathbb{R}^d) = \lbrace \sigma : \sigma \in S \text{ and } \sigma \text{ is Delaunay } \rbrace
 $$
 
+#### What is "nice" about the Delaunay Complex?
+Given the definition of Delaunay simplices, it is natural to wonder if the Delaunay complex can exist for a specific dataset $S$. If it exists, what theoretical guarantees or benefits does it provide? The facts mentioned below[^7], summarize without proof, the "niceness" of Delaunay complex in certain scenarios:
+
+* Every *non-degenerate point set*[^9] $S$ in $\mathbb{R}^d$ admits a *unique* Delaunay complex.
+* Points in $S$, with $|S| = n$, are said to be in *general position w.r.t. spheres* if no $d+2$-size subsets of $S$ lie on the same hypersphere[^10]. This ensures that $\mathrm{Del}(S, \mathbb{R}^d)$ can be embedded in $\mathbb{R}^d$.
+
+**Theorem:** If points in $S$ are in *general position w.r.t spheres*, then $\mathrm{Del}(S, \mathbb{R}^d)$ has a natural embedding in $\mathbb{R}^d$. This embedding is a triangulation of $S$ called the **Delaunay triangulation of $S$**.
 
 ### Alpha Complex
 
@@ -138,5 +145,6 @@ $$
 [^6]: (2008). A Topological Interlude. In: [Using the Borsuk–Ulam Theorem](https://doi.org/10.1007/978-3-540-76649-0_4). Universitext. Springer, Berlin, Heidelberg. 
 [^7]: Dey, T., & Wang, Y. (2022). [*Computational Topology for Data Analysis*](10.1017/9781009099950). Cambridge: Cambridge University Press. 
 [^8]: Boissonnat, Jean-Daniel, Frédéric Chazal, and Mariette Yvinec. 2018. [*Geometric and Topological Inference*](). Cambridge: Cambridge University Press.
-
+[^9]: [Non-degenerate point set](https://math.stackexchange.com/questions/4189802/are-the-vertices-of-a-non-degenerate-n-simplex-in-mathbbrn1-linearly), Math StackExchange
+[^10]: Weisstein, Eric W. "[Hypersphere](https://mathworld.wolfram.com/Hypersphere.html)." From MathWorld--A Wolfram Web Resource.
 
