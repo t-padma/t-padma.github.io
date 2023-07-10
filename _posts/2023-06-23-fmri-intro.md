@@ -8,7 +8,7 @@ tags: intro fmri physics
 Our brain activity is constantly fluctuating as we engage in different activities on a daily basis. In fact, the brain is quite active even while we are resting with our eyes closed. fMRI is a safe and non-invasive neuroimaging tool that plays quite an essential in understanding brain activity and brain function. The discovery that a change in neuronal activity is associated with a change in local blood flow patterns which in turn leads to a change in blood's magnetic properties is the  fundamental idea behind how fMRI works.[^1] The [YouTube video](https://www.youtube.com/watch?v=P7EqyM1Ar_U) made by the Beckman Institute at UIUC is a useful first introduction to what an fMRI does.
 
 ### Blood Oxygen Level Dependent (BOLD) signal
-Brain function requires glucose as an energy source. Hemoglobin transports oxygen to the brain which is required for glucose metabolism (which in turn releases energy). Regional brain function leads to blood flow which in turn changes the amount of oxygen in the neighborhood i.e. the local magnetic field is perturbed. This change in the amount of oxygen-induced by neural activity gives rise to the BOLD signal. A detailed description is given in the next paragraph.
+Brain function requires glucose as an energy source. Hemoglobin transports oxygen to the brain which is required for glucose metabolism (which in turn releases energy). Regional brain function leads to blood flow which in turn changes the amount of oxygen in the neighborhood i.e. the local magnetic field is perturbed. This change in the amount of oxygen, induced by neural activity, gives rise to the BOLD signal. A detailed description is given in the next paragraph.
 
 ![bold](/images/bold_signal.png)
 
@@ -30,35 +30,37 @@ BOLD imaging is the most common method of fMRI.[^3] BOLD MRI is also called fMRI
 
 ![magnet](/images/magnet.png)
 
-2. The orientation of these protons (as a magnet) is in general random but can be influenced by the field $B_0$ associated with the fMRI. The protons align *parallel* or *antiparallel* to the magnetic field $B_0$. However, a small majority of the protons align with the direction of $B_0$. This gives rise to a *net magnetization vector* in the direction of $B_0$. 
+2. The orientation of these protons (as a magnet) is in general random but can be influenced by the field $B_0$ associated with the fMRI. The protons align *parallel* or *antiparallel* to the magnetic field $B_0$. However, a small majority of the protons align with the direction of $B_0$. This gives rise to a **net magnetization vector** in the direction of $B_0$. 
 
 ![magnets](/images/orient.png) 
 
-3. In the picture below, the white vector denotes the net magnetization vector in the direction of $B_0$. Using a radiofrequency pulse $B_1$, called *excitation*, we can ``tilt" the net magnetization vector to be perpendicular to $B_0$.
+3. In the picture below, the white vector denotes the net magnetization vector in the direction of $B_0$. Using a radiofrequency pulse $B_1$, called **excitation**, we can "tilt" the net magnetization vector to be perpendicular to $B_0$.
 
 ![perp](/images/b0.png) ![perp](/images/b1.png) 
 
-4. The net magnetization vector will spiral around the $B_0$ direction which induces an electrical signal. 
+4. The net magnetization vector will spiral around the $B_0$ direction which induces an electrical signal. This follows from the Ampere's right-hand rule.
 
 ![precess](/images/precess.png) ![perp](/images/recover.png) 
 
-At the level of a single proton, *precession* is the spinning of the proton about its own axis. In the presence of a radiofrequency (RF) signal (shown below in red), the proton begins to precess in a different direction and with an angle (w.r.t the axis) that depends on the strength and duration of the RF pulse. This leads to a change in **longitudinal magnetization**.
+#### What is happening at the proton level?
+At the level of a single proton, **precession** is the spinning of the proton about its own axis. In the presence of a radiofrequency (RF) signal (shown below in red), the proton begins to precess in a different direction and with an angle (w.r.t the axis) that depends on the strength and duration of the RF pulse. This leads to a change in **longitudinal magnetization**.
 
 ![rf](/images/rf.png) ![rf](/images/rf2.png) 
 
-At the level of multiple protons, we initially start with protons precessing about their axis and out of sync in such a way that the net magnetization is parallel to $B_0$. When RF pulse energy is applied two things happen:
+At the level of multiple protons, we initially start with protons precessing about their axis and **out of sync** in such a way that the net magnetization is parallel to $B_0$. When RF pulse energy is applied two things happen
+
     * some protons reverse their precession directions so that there is no net longitudinal magnetization.
     * all the protons process in phase temporarily. This *brief* synchronization of precession is **transverse magnetization**.
 
 ![rf](/images/first.png) ![rf](/images/second.png)
 
-The protons recover to their original state of orientation i.e. out of phase precession with net magnetization in the direction of $B_0$. Hence the transverse signal *decays* and the longitudinal signal *recovers*. This decay will look like a spiraling of the net magnetization vector about the $B_0$ direction. (as shown in the picture in point four) This recovery is also called *relaxation* while the process of precessing is called *relaxation*.
+The protons recover to their original state of orientation i.e. out of phase precession with net magnetization in the direction of $B_0$. Hence the transverse signal *decays* and the longitudinal signal *recovers*. This decay will look like a spiraling of the net magnetization vector about the $B_0$ direction. (as shown in the picture in point four) This recovery is also called **relaxation**.
 
 **Remarks** 
-* The frequency of precession ($f_0$), described by the *Larmor equation*, depends on the strength of magnetic field $B_0$. The *gyromagnetic ratio* $\gamma$ is a constant that is unique to each nucleus.
+* The frequency of precession ($f_0$), described by the **Larmor equation**, depends on the strength of magnetic field $B_0$. The *gyromagnetic ratio* $\gamma$ is a constant that is unique to each nucleus.
 $$f_0 = \gamma B_0 $$
-* The point at which $63\%$ of the longitudinal magnetization is *recovered* is called **T1 time**.
-* The time at which $63\%$ of the transverse magnetization is *lost* is called **T2 time**.
+* The point at which $63%$ of the longitudinal magnetization is *recovered* is called **T1 time**.
+* The time at which $63%$ of the transverse magnetization is *lost* is called **T2 time**.
 * The T1 and T2 times are unique to each tissue type image.
 
 ### Image formation in fMRI
