@@ -75,13 +75,17 @@ $$
 \mathcal{V}(s_i, S) = \left\lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \quad \forall s_j \in S-\lbrace s_i \rbrace \right\rbrace = \bigcap_{j \neq i} \lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \rbrace
 $$
 
+![vor](/images/vor.png)
+
 Observe that the Voronoi cells form a cover for the underlying space in such a way that the interiors of these cells are pairwise disjoint.
 
 $$
 \mathbb{R}^d = \bigcup_{i=1}^n \mathcal{V}(s_i, S) \text{ and } \mathrm{Int}(\mathcal{V}(s_i, S)) \cap \mathrm{Int}(\mathcal{V}(s_j, S)) \text{ for } i \neq j
 $$
 
-The collection of Voronoi cells $\lbrace \mathcal{V}(s_i) \rbrace_{i=1}^n$ and their faces constitute the **Voronoi Diagram** of $P$, denoted as $\mathcal{V}(S)$. Nerve of the cover associated with this diagram gives the abstract simplicial complex called **Delaunay Complex**.
+The collection of Voronoi cells $\lbrace \mathcal{V}(s_i) \rbrace_{i=1}^n$ and their faces constitute the **Voronoi Diagram** of $S$, denoted as $\mathcal{V}(S)$. Nerve of the cover associated with this diagram gives the abstract simplicial complex called **Delaunay Complex**.
+
+![dell](/images/del2.png)
 
 #### Mathematical structure of $\mathcal{V}(S)$
 The Voronoi diagram of $S$ is a mathematical structure called **Cell Complex** which can be thought of as the generalization of a simplicial complex. [^8] Observe that a simplicial complex $K$ is made of simplices which are all, in general, said to be the *faces* of $K$. Similarly, a cell complex $C$ is made up of "special" *faces* that satisfy the properties that the simplices in $K$ satisfy. Let $f, g \in C$, then
