@@ -32,3 +32,12 @@ A geometric simplicial complex $\mathcal{K}_e$ is called the **geometric realiza
 For every abstract simplicial complex $\mathcal{X}$ there is a triangulation, unique up to an isomorphism, whose simplicial complex is $\mathcal{X}$.
 
 Check simplicial complex vs underlying space
+
+
+[^1]: Course [MATH0074: Topology and Groups (2017)](https://www.homepages.ucl.ac.uk/~ucahjde/tg/html/index.html) taught by [Prof. Jonny Evans](http://jde27.uk/) at University College London, UK.
+[^2]: Nov 9 notes under "Complexes and Homology", [CS598: Computational Topology (Fall 09)](https://jeffe.cs.illinois.edu/teaching/comptop/2009/schedule.html), Lecture notes by [Prof. Jeff Erickson](https://jeffe.cs.illinois.edu/index.html), Dept. of Computer Science, UIUC, Viewed on 07/28/2023.
+[^3]: Ch2: Complexes, R. Ghrist, ["Elementary Applied Topology"](https://www2.math.upenn.edu/~ghrist/notes.html), ed. 1.0, Createspace, 2014.
+[^4]: [Hypergraph](https://encyclopediaofmath.org/wiki/Hypergraph). Encyclopedia of Mathematics.
+[^5]: Bernhard Korte and Jens Vygen. 2018. [Combinatorial Optimization: Theory and Algorithms](https://doi.org/10.1007/978-3-662-56039-6) (6th. ed.). Springer Berlin, Heidelberg.
+[^6]: Harer
+[^7]: Tamal
