@@ -7,10 +7,15 @@ tags: morse_theory intro alg_topo
 
 The blog introduces terms and results from Discrete Morse Theory that will eventually be helpful in understanding the paper **The Morse Theory of Cech and Delaunay Complexes** by U. Bauer and H. Edelsbrunner[^1]. The textbook I adhered to learn the basics is the textbook "**Organized Collapse: An Introduction to Discrete Morse Theory**" by Dmitry N. Kozlov[^2]. Additionally, Robin Forman's "A User's Guide To Discrete Morse Theory"[^3] is a very concise and useful introduction to Discrete Morse Theory.
 
-Firstly, Morse Theory is unrelated to Morse code although the pioneering people involved are  Marston Morse and Samuel Morse respectively. As the title suggests, discrete Morse theory is the "discretized" version of a branch of mathematics called Morse theory. A useful visual introduction to Morse Theory is given in the blog by Prof. Bastian Rieck titled "A visual introduction to Morse theory"[^4]
+Firstly, Morse Theory is unrelated to Morse code although the pioneering people involved are  Marston Morse and Samuel Morse respectively. As the title suggests, discrete Morse theory is the "discretized" version of a branch of mathematics called Morse theory. A simple visual introduction to Morse Theory is given in the blog by Prof. Bastian Rieck titled "A visual introduction to Morse theory"[^4]. In addition to this, the preface in the book by Dmitry N. Kozlov[^2] provides a good motivation behind the discrete morse theory.
 
+### Elementary Simplicial Collapse
+$\mathcal{K}$ is an abstract simplicial complex with $\sigma, \tau \in \mathcal{K}$ such that the following conditions are satisfied:
+* $\tau$ is a boundary simplex of $\sigma$ of codimension $1$ i.e.
 
-
+  $$
+  \delta_k (\sigma) = \tau \text{ where } \delta_k: C_k \longrightarrow C_{k-1} \text{ is the boundary operator.}
+  $$
 
 
 
