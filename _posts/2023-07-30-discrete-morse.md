@@ -16,8 +16,8 @@ $\mathcal{K}$ is an abstract simplicial complex with $\sigma, \tau \in \mathcal{
   $$
   \delta_k (\sigma) = \tau \text{ where } \delta_k: C_k \longrightarrow C_{k-1} \text{ is the boundary operator.}
   $$
-
-
+  
+* 
 
 
 
