@@ -33,7 +33,8 @@ $$
 * The simplex $\tau$ is called **free simplex**. Clearly, if $\mathcal{K}$ does not contain any free simplices, then simplicial collapse is not possible.
 * $\mathcal{K} \setminus \lbrace \sigma, \tau \rbrace $, the set of sets obtained after a simplicial collapse, can be proved to be a well-defined simplicial complex.[^2]
 
-
+### Example
+![collapse](\images\example_collapse.svg)
 
 
 
