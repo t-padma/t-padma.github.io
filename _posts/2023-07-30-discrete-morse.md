@@ -7,7 +7,7 @@ tags: morse_theory intro alg_topo
 
 The blog introduces terms and results from Discrete Morse Theory that will eventually be helpful in understanding the paper **The Morse Theory of Cech and Delaunay Complexes** by U. Bauer and H. Edelsbrunner[^1]. The textbook I adhered to learn the basics is the textbook "**Organized Collapse: An Introduction to Discrete Morse Theory**" by Dmitry N. Kozlov[^2]. Additionally, Robin Forman's "A User's Guide To Discrete Morse Theory"[^3] is a very concise and useful introduction to Discrete Morse Theory.
 
-Firstly, Morse Theory is unrelated to Morse code although the pioneering people involved are  Marston Morse and Samuel Morse respectively. As the title suggests, discrete Morse theory is the "discretized" version of a branch of mathematics called Morse theory. A simple visual introduction to Morse Theory is given in the blog by Prof. Bastian Rieck titled "A visual introduction to Morse theory"[^4]. In addition to this, the preface in the book by Dmitry N. Kozlov[^2] provides a good motivation behind the discrete morse theory.
+Firstly, Morse Theory is unrelated to Morse code although the pioneering people involved are  Marston Morse and Samuel Morse respectively. As the title suggests, discrete Morse theory is the "discretized" version of a branch of mathematics called Morse theory. A simple visual introduction to Morse Theory is given in the blog by Prof. Bastian Rieck titled "A visual introduction to Morse theory"[^4]. In addition to this, the preface in the book by Dmitry N. Kozlov[^2] provides a good motivation behind the discrete Morse theory.
 
 ### Elementary Simplicial Collapse
 Intuitively, an elementary simplicial collapse is a structured way of removing two simplices such that the resulting complex is still an abstract simplicial complex. The mathematical definition below explains the structured way of removing simplices.
@@ -57,19 +57,20 @@ Consider a vertex or a 0-complex $\mathcal{K}_1 = \lbrace \emptyset, \lbrace v \
 ![topo](\images\topo.svg)
 
 $X$ is a topological space with $A \subset X$ and $i: A \hookrightarrow X$ denotes the inclusion map. Let $f: X \rightarrow A$ be a continuous map. The notation $\mathcal{I}_S$ is used to denote the identity map on set $S$. Then:
-1. $f: X \rightarrow A$ is a **retraction** and $A$ is called a **retract** of $X$ if $\restr{f}{A} \equiv i \circ f = \mathcal{I}_A$ i.e. $f(a) = a \quad \forall \quad a \in A$.
+1. $f: X \rightarrow A$ is a **retraction** and $A$ is called a **retract** of $X$ if $f \vert_A \equiv i \circ f = \mathcal{I}_A$ i.e. $f(a) = a \quad \forall \quad a \in A$.
    
    ![retract](\images\retract.svg)
    
-3. $f: X \rightarrow A$ is a **deformation retraction** and $A$ is called a **deformation retract** of $X$ if $i \circ f \simeq \mathcal{I}_X$. Intuitively, $\restr{f}{A}$ can be *continuously deformed* to give   $\mathcal{I}_X$.
+3. $f: X \rightarrow A$ is a **deformation retraction** and $A$ is called a **deformation retract** of $X$ if $i \circ f \simeq \mathcal{I}_X$. Intuitively, $f \vert_A$ can be *continuously deformed* to give   $\mathcal{I}_X$.
    
    ![retract](\images\def_retract.svg)
    
-5. $f: X \rightarrow A$ is a **strong deformation retraction** and $A$ is called a ** strong deformation retract** of $X$ if $i \circ f \simeq \mathcal{I}_X$ via the homotopy map $F: X \times I \rightarrow X$ such that $F(a,t) = a$ for all $a \in A$ and $t \in I$. Intuitively, we  can continuously deform $\restr{f}{A}$ to give $\mathcal{I}_X$ such that the deformation process parameter $t$ is independent of the homotopy map value.
+4. $f: X \rightarrow A$ is a **strong deformation retraction** and $A$ is called a ** strong deformation retract** of $X$ if $i \circ f \simeq \mathcal{I}_X$ via the homotopy map $F: X \times I \rightarrow X$ such that $F(a,t) = a$ for all $a \in A$ and $t \in I$. Intuitively, we  can continuously deform $f \vert_A$ to give $\mathcal{I}_X$ such that the deformation process parameter $t$ is independent of the homotopy map value.
    Example: $A = \mathcal{S}^1 = \lbrace x \in \mathbb{R}^2 : \| x \| = 1  \rbrace$ is a strong deformation retraction of $X = \mathbb{R}^2 \setminus \lbrace 0 \rbrace$.
    
   ![retract](\images\strong_def.svg)
 
+### Simplicial collapse as strong deformation retracts.
 
 
 [^1]: Bauer, U., and Edelsbrunner, H. (2016), "[The Morse theory of Čech and Delaunay complexes](https://doi.org/10.1090/tran/6991)", Transactions of the American Mathematical Society, American Mathematical Society (AMS).
