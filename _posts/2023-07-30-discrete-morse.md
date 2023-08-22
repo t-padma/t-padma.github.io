@@ -23,17 +23,17 @@ $\mathcal{K}$ is an abstract simplicial complex with $\sigma, \tau \in \mathcal{
 
 Removing simplices $\sigma$ and $\tau$ from $\mathcal{K}$ is called an **elementary simplicial collapse**.
 
-**Remarks:** \
+**Remarks:** 
 * Elementary simplicial collapses are mostly abbreviated as *simplicial collapse* unless otherwise specified.
 * The definition above claims that the simplex $\sigma$ must be *maximal*[^5] in the sense that it is not the proper face of any other simplex in $\mathcal{K}$.
-
-$$
-\sigma \quad \text{ maximal **iff** } \nexists \gamma \in \mathcal{K} \quad \text{ such that } \sigma \subset \gamma
-$$
+  $$
+  \sigma \quad \text{ is maximal **iff** } \quad \nexists \quad \gamma \in \mathcal{K} \quad \text{such that} \quad \sigma \subset \gamma
+  $$
 * The simplex $\tau$ is called **free simplex**. Clearly, if $\mathcal{K}$ does not contain any free simplices, then simplicial collapse is not possible.
 * $\mathcal{K} \setminus \lbrace \sigma, \tau \rbrace $, the set of sets obtained after a simplicial collapse, can be proved to be a well-defined simplicial complex.[^2]
 
 ### Example
+The following is an illustration of a simplicial collapse drawn using [Inkscape](https://inkscape.org/).
 ![collapse](\images\example_collapse.svg)
 
 
