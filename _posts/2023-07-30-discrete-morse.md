@@ -34,6 +34,7 @@ Removing simplices $\sigma$ and $\tau$ from $\mathcal{K}$ is called an **element
 
 ### Example
 The following is an illustration of a simplicial collapse drawn using [Inkscape](https://inkscape.org/).
+
 ![collapse](\images\example_collapse.svg)
 
 The following observations can be made based on the simple example above.
@@ -54,13 +55,19 @@ Consider a vertex or a 0-complex $\mathcal{K}_1 = \lbrace \emptyset, \lbrace v \
 
 ### Deformation Retracts
 ![topo](\images\topo.svg)
+
 $X$ is a topological space with $A \subset X$ and $i: A \hookrightarrow X$ denotes the inclusion map. Let $f: X \rightarrow A$ be a continuous map. The notation $\mathcal{I}_S$ is used to denote the identity map on set $S$. Then:
 1. $f: X \rightarrow A$ is a **retraction** and $A$ is called a **retract** of $X$ if $\restr{f}{A} \equiv i \circ f = \mathcal{I}_A$ i.e. $f(a) = a \quad \forall \quad a \in A$.
+   
    ![retract](\images\retract.svg)
-2. $f: X \rightarrow A$ is a **deformation retraction** and $A$ is called a **deformation retract** of $X$ if $i \circ f \simeq \mathcal{I}_X$. Intuitively, $\restr{f}{A}$ can be *continuously deformed* to give   $\mathcal{I}_X$.
+   
+3. $f: X \rightarrow A$ is a **deformation retraction** and $A$ is called a **deformation retract** of $X$ if $i \circ f \simeq \mathcal{I}_X$. Intuitively, $\restr{f}{A}$ can be *continuously deformed* to give   $\mathcal{I}_X$.
+   
    ![retract](\images\def_retract.svg)
-3. $f: X \rightarrow A$ is a **strong deformation retraction** and $A$ is called a ** strong deformation retract** of $X$ if $i \circ f \simeq \mathcal{I}_X$ via the homotopy map $F: X \times I \rightarrow X$ such that $F(a,t) = a$ for all $a \in A$ and $t \in I$. Intuitively, we  can continuously deform $\restr{f}{A}$ to give $\mathcal{I}_X$ such that the deformation process parameter $t$ is independent of the homotopy map value.
+   
+5. $f: X \rightarrow A$ is a **strong deformation retraction** and $A$ is called a ** strong deformation retract** of $X$ if $i \circ f \simeq \mathcal{I}_X$ via the homotopy map $F: X \times I \rightarrow X$ such that $F(a,t) = a$ for all $a \in A$ and $t \in I$. Intuitively, we  can continuously deform $\restr{f}{A}$ to give $\mathcal{I}_X$ such that the deformation process parameter $t$ is independent of the homotopy map value.
    Example: $A = \mathcal{S}^1 = \lbrace x \in \mathbb{R}^2 : \| x \| = 1  \rbrace$ is a strong deformation retraction of $X = \mathbb{R}^2 \setminus \lbrace 0 \rbrace$.
+   
   ![retract](\images\strong_def.svg)
 
 
