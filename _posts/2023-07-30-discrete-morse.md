@@ -35,8 +35,14 @@ Removing simplices $\sigma$ and $\tau$ from $\mathcal{K}$ is called an **element
 ### Example
 The following is an illustration of a simplicial collapse drawn using [Inkscape](https://inkscape.org/).
 ![collapse](\images\example_collapse.svg)
-The following observations can be made based on the simple example above.
 
+The following observations can be made based on the simple example above.
+1. There can be more than one possible sequence of elementary collapses for a given simplicial complex $\mathcal{K}$. In fact, different sequences of collapses can lead to non-isomorphic subcomplexes.
+2. The order in which we perform collapses is important as well. If we follow the "wrong order" of collapses, then we will end up with a non-collapsible subcomplex very early on.
+
+### Void Simplicial complex
+A void simplicial complex $\mathcal{K}$ is an empty set i.e. it doesn't even include the empty simplex $\emptyset$. Hence $\mathcal{K} = \lbrace \quad \rbrace$. \
+Consider a vertex or a 0-complex $\mathcal{K}_1 = \lbrace \emptyset, \lbrace v \rbrace  \rbrace$. Here, the empty simplex $\emptyset$ is considered free. Hence $\mathcal{K}_1 \searrow \lbrace \rbrace$ is a *valid elementary collapse*.
 
 
 
