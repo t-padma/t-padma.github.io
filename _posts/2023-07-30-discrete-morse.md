@@ -63,18 +63,18 @@ $X$ is a topological space with $A \subset X$ and $i: A \hookrightarrow X$ denot
    
 3. $f: X \rightarrow A$ is a **deformation retraction** and $A$ is called a **deformation retract** of $X$ if $i \circ f \simeq \mathcal{I}_X$. Intuitively, $f \vert_A$ can be *continuously deformed* to give   $\mathcal{I}_X$.
    
-   ![retract](\images\def_retract.svg)
+   ![dretract](\images\def_retract.svg)
    
 4. $f: X \rightarrow A$ is a **strong deformation retraction** and $A$ is called a ** strong deformation retract** of $X$ if $i \circ f \simeq \mathcal{I}_X$ via the homotopy map $F: X \times I \rightarrow X$ such that $F(a,t) = a$ for all $a \in A$ and $t \in I$. Intuitively, we  can continuously deform $f \vert_A$ to give $\mathcal{I}_X$ such that the deformation process parameter $t$ is independent of the homotopy map value.
    Example: $A = \mathcal{S}^1 = \lbrace x \in \mathbb{R}^2 : \| x \| = 1  \rbrace$ is a strong deformation retraction of $X = \mathbb{R}^2 \setminus \lbrace 0 \rbrace$.
    
-  ![retract](\images\strong_def.svg)
+  ![sdretract](\images\strong_def.svg)
 
 ### Simplicial collapse as strong deformation retracts.
 \textbf{Proposition}[^2]: $\mathcal{K}$ is a simplicial complex with $\sigma, \tau \in \mathcal{K}$ such that $\mathrm{dim} \sigma = \mathrm{dim} \tau + 1 \geq 1$. Simplicial collapse corresponding to $\sigma, \tau$ yields a strong deformation retract of $A = \mathrm{Geom}(\mathcal{K}\setminus \lbrace \sigma, \tau \rbrace)$ on $X = \mathrm{Geom}(\mathcal{K})$ where $\mathrm{Geom}(\cdot)$ represents geometric realization of simplicial complex. \
 \textbf{Proof:} Refer Pg. 152-153, proposition 9.9, of the textbook by D. Kozlov [^2]. A simple example of viewing simplicial collapse as a strong deformation retract is given below. Observe how the Geometric realization of $\mathcal{K} \setminus \lbrace \sigma, \tau \rbrace$ is fixed throughout the deformation process.
 
-![retract](\images\pic_proof.png)
+![ef](\images\pic_proof.png)
 
 [^1]: Bauer, U., and Edelsbrunner, H. (2016), "[The Morse theory of Čech and Delaunay complexes](https://doi.org/10.1090/tran/6991)", Transactions of the American Mathematical Society, American Mathematical Society (AMS).
 [^2]: Dmitry N. Kozlov (2020), "[Organized Collapse: An Introduction to Discrete Morse Theory](https://www.maa.org/press/maa-reviews/organized-collapse-an-introduction-to-discrete-morse-theory)", Graduate Studies in Mathematics, American Mathematical Society (AMS).
