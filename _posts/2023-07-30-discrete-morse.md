@@ -42,10 +42,10 @@ The following observations can be made based on the simple example above.
 
 ### Void Simplicial complex
 A void simplicial complex $\mathcal{K}$ is an empty set i.e. it doesn't even include the empty simplex $\emptyset$. Hence $\mathcal{K} = \lbrace \quad \rbrace$. \
-Consider a vertex or a 0-complex $\mathcal{K}_1 = \lbrace \emptyset, \lbrace v \rbrace  \rbrace$. Here, the empty simplex $\emptyset$ is considered free. Hence $\mathcal{K}_1 \searrow \lbrace \rbrace$ is a *valid elementary collapse*.
+Consider a vertex or a 0-complex $\mathcal{K}_1 = \lbrace \emptyset, \lbrace v \rbrace  \rbrace$. Here, the empty simplex $\emptyset$ is considered free. Hence $\mathcal{K}_1 \searrow \lbrace \rbrace$ is a *valid elementary collapse*. However, the empty simplicial complex $\lbrace \emptyset \rbrace$ is *not* collapsible.
 
-
-
+### Collapsible simplicial complex
+An abstract simplicial complex $\mathcal{K}$ is called **collapsible** if there exists a sequence of simplicial collapses reducing $\mathcal{K}$ to the void simplicial complex.
 
 
 
