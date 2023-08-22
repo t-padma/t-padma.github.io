@@ -42,11 +42,15 @@ The following observations can be made based on the simple example above.
 
 ### Void Simplicial complex
 A void simplicial complex $\mathcal{K}$ is an empty set i.e. it doesn't even include the empty simplex $\emptyset$. Hence $\mathcal{K} = \lbrace \quad \rbrace$. \
-Consider a vertex or a 0-complex $\mathcal{K}_1 = \lbrace \emptyset, \lbrace v \rbrace  \rbrace$. Here, the empty simplex $\emptyset$ is considered free. Hence $\mathcal{K}_1 \searrow \lbrace \rbrace$ is a *valid elementary collapse*. However, the empty simplicial complex $\lbrace \emptyset \rbrace$ is *not* collapsible.
+Consider a vertex or a 0-complex $\mathcal{K}_1 = \lbrace \emptyset, \lbrace v \rbrace  \rbrace$. Here, the empty simplex $\emptyset$ is considered free. Hence $\mathcal{K}_1$ to  $\lbrace \rbrace$ is a *valid elementary collapse*. However, the empty simplicial complex $\lbrace \emptyset \rbrace$ is *not* collapsible.
 
 ### Collapsible simplicial complex
-An abstract simplicial complex $\mathcal{K}$ is called **collapsible** if there exists a sequence of simplicial collapses reducing $\mathcal{K}$ to the void simplicial complex.
-
+* An abstract simplicial complex $\mathcal{K}$ is called **collapsible** if there exists a sequence of (elementary) simplicial collapses reducing $\mathcal{K}$ to the void simplicial complex.
+* Following a sequence of simplicial collapses on $\mathcal{K}_1$, we get another simplicial complex $\mathcal{K}_2$. Then we say *$\mathcal{K}_1$ can be collapsed to $\mathcal{K}_2$*.
+  $$
+  \text{Notation: } \mathcal{K}_1 \searrow \mathcal{K}_2
+  $$
+**Remark**: Collapsibility is a transitive relation i.e. $\mathcal{K}_1 \searrow \mathcal{K}_2$ and $\mathcal{K}_2 \searrow \mathcal{K}_3 \quad \implies \mathcal{K}_1 \searrow \mathcal{K}_3$.
 
 
 
