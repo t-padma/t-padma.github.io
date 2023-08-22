@@ -35,8 +35,7 @@ Removing simplices $\sigma$ and $\tau$ from $\mathcal{K}$ is called an **element
 ### Example
 The following is an illustration of a simplicial collapse drawn using [Inkscape](https://inkscape.org/).
 ![collapse](\images\example_collapse.svg)
-
-
+The following observations can be made based on the simple example above.
 
 
 
