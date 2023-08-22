@@ -27,7 +27,7 @@ Removing simplices $\sigma$ and $\tau$ from $\mathcal{K}$ is called an **element
 * Elementary simplicial collapses are mostly abbreviated as *simplicial collapse* unless otherwise specified.
 * The definition above claims that the simplex $\sigma$ must be *maximal*[^5] in the sense that it is not the proper face of any other simplex in $\mathcal{K}$.
   $$
-  \sigma \quad \text{ is maximal **iff** } \quad \nexists \quad \gamma \in \mathcal{K} \quad \text{such that} \quad \sigma \subset \gamma
+  \sigma \quad \text{ is maximal iff } \quad \nexists \quad \gamma \in \mathcal{K} \quad \text{such that} \quad \sigma \subset \gamma
   $$
 * The simplex $\tau$ is called **free simplex**. Clearly, if $\mathcal{K}$ does not contain any free simplices, then simplicial collapse is not possible.
 * $\mathcal{K} \setminus \lbrace \sigma, \tau \rbrace $, the set of sets obtained after a simplicial collapse, can be proved to be a well-defined simplicial complex.[^2]
@@ -71,7 +71,10 @@ $X$ is a topological space with $A \subset X$ and $i: A \hookrightarrow X$ denot
   ![retract](\images\strong_def.svg)
 
 ### Simplicial collapse as strong deformation retracts.
+\textbf{Proposition}[^2]: $\mathcal{K}$ is a simplicial complex with $\sigma, \tau \in \mathcal{K}$ such that $\mathrm{dim} \sigma = \mathrm{dim} \tau + 1 \geq 1$. Simplicial collapse corresponding to $\sigma, \tau$ yields a strong deformation retract of $A = \mathrm{Geom}(\mathcal{K}\setminus \lbrace \sigma, \tau \rbrace)$ on $X = \mathrm{Geom}(\mathcal{K})$ where $\mathrm{Geom}(\cdot)$ represents geometric realization of simplicial complex. \
+\textbf{Proof:} Refer Pg. 152-153, proposition 9.9, of the textbook by D. Kozlov [^2]. A simple example of viewing simplicial collapse as a strong deformation retract is given below. Observe how the Geometric realization of $\mathcal{K} \setminus \lbrace \sigma, \tau \rbrace$ is fixed throughout the deformation process.
 
+![retract](\images\pic_proof.png)
 
 [^1]: Bauer, U., and Edelsbrunner, H. (2016), "[The Morse theory of Čech and Delaunay complexes](https://doi.org/10.1090/tran/6991)", Transactions of the American Mathematical Society, American Mathematical Society (AMS).
 [^2]: Dmitry N. Kozlov (2020), "[Organized Collapse: An Introduction to Discrete Morse Theory](https://www.maa.org/press/maa-reviews/organized-collapse-an-introduction-to-discrete-morse-theory)", Graduate Studies in Mathematics, American Mathematical Society (AMS).
