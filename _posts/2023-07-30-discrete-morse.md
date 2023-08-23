@@ -76,6 +76,8 @@ $X$ is a topological space with $A \subset X$ and $i: A \hookrightarrow X$ denot
 
 ![ef](\images\pic_proof.png)
 
+### Compound collapse
+
 [^1]: Bauer, U., and Edelsbrunner, H. (2016), "[The Morse theory of Čech and Delaunay complexes](https://doi.org/10.1090/tran/6991)", Transactions of the American Mathematical Society, American Mathematical Society (AMS).
 [^2]: Dmitry N. Kozlov (2020), "[Organized Collapse: An Introduction to Discrete Morse Theory](https://www.maa.org/press/maa-reviews/organized-collapse-an-introduction-to-discrete-morse-theory)", Graduate Studies in Mathematics, American Mathematical Society (AMS).
 [^3]: Forman, Robin. "[A user's guide to discrete Morse theory.](http://eudml.org/doc/123837)", Séminaire Lotharingien de Combinatoire [electronic only] 48 (2002): B48c, 35 p., electronic only-B48c, 35 p., electronic only.
