@@ -46,7 +46,11 @@ $\mathcal{K}$ is an abstract simplicial complex with $\sigma, \tau \in \mathcal{
   $$
 Removing simplices $\sigma$ and $\tau$ from $\mathcal{K}$ is called an **elementary simplicial collapse**. Clearly, if $(\sigma, \tau)$ is a simplicial collapse, then it correponds to an edge in the graph $H(P)$ where $P = \mathcal{H}(\mathcal{K})$.
 
-Following is a summary of everything discussed above
+Following is a summary of what we discussed above:
+
+$$
+\mathcal{K} \xrightarrow[\text{convert to}]{\text{poset}} F(\mathcal{K}) \xrightarrow[\text{associate a}]{\text{graph}} \mathcal{H}\left( F(\mathcal{K}) \right)
+$$
 
 
 
