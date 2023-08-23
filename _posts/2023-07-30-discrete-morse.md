@@ -95,11 +95,19 @@ Intuitively, we would expect a compound simplicial collapse to be made up of a s
 \textbf{Corollary:}[^2] A sequence of compound collapses from a complex $\mathcal{K}_1$ to a complex $\mathcal{K}_2$ yields a strong deformation retract of $A = \mathrm{Geom}(\mathcal{K}_2)$ on $X = \mathrm{Geom}(\mathcal{K}_1)$.
 \textbf{Proof:} Refer to Corollary 9.19 in Kozlov's textbook.
 
-\textbf{Special Case:} If $\mathcal{K}_1$ is a collapsible complex, then taking $\mathcal{K}_2 = \lbrace \quad \rbrace$, we conclude that $\mathbf{Geom}(\mathcal{K}_1)$ is contractible i.e. it is homotopic to a point (also called null-homotopy). However, the converse need not be true i.e. there are simplicial complexes that are not collapsible but have a contractible geometric realization.
+\textbf{Special Case:} If $\mathcal{K}_1$ is a collapsible complex, then taking $\mathcal{K}_2 = \lbrace \quad \rbrace$, we conclude that $\mathrm{Geom}(\mathcal{K}_1)$ is contractible i.e. it is homotopic to a point (also called null-homotopy).
 
 $$
-\mathcal{K}_1 \text{ collapsible } \implies \mathbf{Geom}(\mathcal{K}_1 \text{ is contractible} \text{ but } \mathcal{K}_1 \text{ collapsible } \nLeftarrow \mathbf{Geom}(\mathcal{K}_1 \text{ is contractible}
+\mathcal{K}_1 \text{ collapsible } \implies \mathrm{Geom}(\mathcal{K}_1) \text{ is contractible}
 $$
+
+However, the converse need not be true i.e. there are simplicial complexes that are not collapsible but have a contractible geometric realization.
+
+$$
+\mathcal{K}_1 \text{ collapsible } \nLeftarrow \mathrm{Geom}(\mathcal{K}_1) \text{ is contractible}
+$$
+
+Theorem 9.24 of Kozlov's textbook states that the converse, and hence the equivalence, holds i.e. $\mathrm{Geom}(\mathcal{K}_1)$ is contractible if there exists collapsible $\tilde{\mathcal{K}}$ such that $\mathcal{K} \subset \tilde{\mathcal{K}}$ and $\tilde{\mathcal{K}} \searrow \mathcal{K}$.
 
 ### Simple Homotopy Theory
 
