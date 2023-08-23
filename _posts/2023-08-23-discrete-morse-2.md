@@ -37,18 +37,16 @@ Note: Observe that point 2 above looks very similar to the simplicial collapse d
 
 Now that we have a graph associated to the poset $P$, we can now define **partial matching in the poset** $P$ as partial matching in $H(P)$
 
-**Review of simplicial collapse:**\
+**Combining all information**\
 $\mathcal{K}$ is an abstract simplicial complex with $\sigma, \tau \in \mathcal{K}$ such that the following conditions are satisfied:
-1. $\tau$ is a boundary simplex of $\sigma$ of codimension $1$ i.e.
-
-  $$
-  \partial_k (\sigma) = \tau \text{ where } \partial_k: C_k \longrightarrow C_{k-1} \text{ is the boundary operator.}
-  $$
-  
+1. $\tau$ is a boundary simplex of $\sigma$ of codimension $1$ i.e.  
 2. The only simplices in $\mathcal{K}$ that contain $\tau$ are $\tau$ and $\sigma$.
+  $$
+\nexists \gamma \in \mathcal{K} such that \sigma \superset \gamma \superset \tau
+  $$
+Removing simplices $\sigma$ and $\tau$ from $\mathcal{K}$ is called an **elementary simplicial collapse**. Clearly, if $(\sigma, \tau)$ is a simplicial collapse, then it correponds to an edge in the graph $H(P)$ where $P = \mathcal{H}(\mathcal{K})$.
 
-Removing simplices $\sigma$ and $\tau$ from $\mathcal{K}$ is called an **elementary simplicial collapse**.
-
+Following is a summary of everything discussed above
 
 
 
