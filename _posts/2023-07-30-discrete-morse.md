@@ -90,6 +90,9 @@ A **compound simplicial collapse** of $\mathcal{K}$ is the removal of all simpli
 2. In case of an elementary simplicial collapse, if there exists a simplex $\gamma$ satisfying $\tau \subset \gamma \subset \sigma$, then $\tau = \gamma$.
 3. In short, we call the pair $(\sigma, \tau)$ a compound simplicial collapse.
 
+Intuitively, we would expect a compound simplicial collapse to be made up of a sequence of elementary simplicial collapses. Proposition 9.18 from D. N. Kozlov[^2] textbook gives rigorous proof to the statement of this statement of interest.
+
+
 [^1]: Bauer, U., and Edelsbrunner, H. (2016), "[The Morse theory of Čech and Delaunay complexes](https://doi.org/10.1090/tran/6991)", Transactions of the American Mathematical Society, American Mathematical Society (AMS).
 [^2]: Dmitry N. Kozlov (2020), "[Organized Collapse: An Introduction to Discrete Morse Theory](https://www.maa.org/press/maa-reviews/organized-collapse-an-introduction-to-discrete-morse-theory)", Graduate Studies in Mathematics, American Mathematical Society (AMS).
 [^3]: Forman, Robin. "[A user's guide to discrete Morse theory.](http://eudml.org/doc/123837)", Séminaire Lotharingien de Combinatoire [electronic only] 48 (2002): B48c, 35 p., electronic only-B48c, 35 p., electronic only.
