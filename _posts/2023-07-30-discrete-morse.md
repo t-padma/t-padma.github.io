@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Basic Discrete Morse Theory
+title: Discrete Morse Theory - I
 mathjax: true
 tags: morse_theory intro alg_topo
 ---
