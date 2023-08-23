@@ -44,6 +44,7 @@ $\mathcal{K}$ is an abstract simplicial complex with $\sigma, \tau \in \mathcal{
   $$
 \nexists \gamma \in \mathcal{K} such that \sigma \superset \gamma \superset \tau
   $$
+
 Removing simplices $\sigma$ and $\tau$ from $\mathcal{K}$ is called an **elementary simplicial collapse**. Clearly, if $(\sigma, \tau)$ is a simplicial collapse, then it correponds to an edge in the graph $H(P)$ where $P = \mathcal{H}(\mathcal{K})$.
 
 Following is a summary of what we discussed above:
