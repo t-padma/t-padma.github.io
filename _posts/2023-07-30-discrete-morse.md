@@ -69,7 +69,7 @@ $X$ is a topological space with $A \subset X$ and $i: A \hookrightarrow X$ denot
    Example: $A = \mathcal{S}^1 = \lbrace x \in \mathbb{R}^2 : \| x \| = 1  \rbrace$ is a strong deformation retraction of $X = \mathbb{R}^2 \setminus \lbrace 0 \rbrace$.
    
   ![sdretract](\images\strong_def.svg)
-
+  
 ### Simplicial collapse as strong deformation retracts.
 \textbf{Proposition}[^2]: $\mathcal{K}$ is a simplicial complex with $\sigma, \tau \in \mathcal{K}$ such that $\mathrm{dim} \sigma = \mathrm{dim} \tau + 1 \geq 1$. Simplicial collapse corresponding to $\sigma, \tau$ yields a strong deformation retract of $A = \mathrm{Geom}(\mathcal{K}\setminus \lbrace \sigma, \tau \rbrace)$ on $X = \mathrm{Geom}(\mathcal{K})$ where $\mathrm{Geom}(\cdot)$ represents geometric realization of simplicial complex. \
 \textbf{Proof:} Refer Pg. 152-153, proposition 9.9, of the textbook by D. Kozlov [^2]. A simple example of viewing simplicial collapse as a strong deformation retract is given below. Observe how the Geometric realization of $\mathcal{K} \setminus \lbrace \sigma, \tau \rbrace$ is fixed throughout the deformation process.
@@ -77,6 +77,18 @@ $X$ is a topological space with $A \subset X$ and $i: A \hookrightarrow X$ denot
 ![ef](\images\pic_proof.png)
 
 ### Compound collapse
+$\mathcal{K}$ is an abstract simplicial complex with $\sigma, \tau \in \mathcal{K}$ such that:
+* $\tau \subset \sigma$ and $\mathrm{dim}(\tau) < \mathrm{dim}(\sigma)$.
+* Every simplex containing $\tau$ must be contained in $\sigma$ i.e.
+  $$
+  \text{ If } \tau \subset \gamma \text{ then } \gamma \in \sigma ; \quad \gamma \in \mathcal{K} 
+  $$
+A **compound simplicial collapse** of $\mathcal{K}$ is the removal of all simplices $\gamma$ such that $\tau \subset \gamma \subset \sigma$.
+
+\textbf{Remarks:} \
+1. Compound collapse is a generalization of the concept of elementary simplicial collapse in the sense that the difference between the dimensions of $\sigma$ and $\tau$ is strictly more than $1$.
+2. In case of an elementary simplicial collapse, if there exists a simplex $\gamma$ satisfying $\tau \subset \gamma \subset \sigma$, then $\tau = \gamma$.
+3. In short, we call the pair $(\sigma, \tau)$ a compound simplicial collapse.
 
 [^1]: Bauer, U., and Edelsbrunner, H. (2016), "[The Morse theory of Čech and Delaunay complexes](https://doi.org/10.1090/tran/6991)", Transactions of the American Mathematical Society, American Mathematical Society (AMS).
 [^2]: Dmitry N. Kozlov (2020), "[Organized Collapse: An Introduction to Discrete Morse Theory](https://www.maa.org/press/maa-reviews/organized-collapse-an-introduction-to-discrete-morse-theory)", Graduate Studies in Mathematics, American Mathematical Society (AMS).
