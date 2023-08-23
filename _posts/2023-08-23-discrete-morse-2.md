@@ -5,7 +5,7 @@ mathjax: true
 tags: morse_theory intro alg_topo
 ---
 
-The current post is a continuation of an earlier post [Discrete Morse Theory - I](https://t-padma.github.io/2023/07/30/discrete-morse.html). While part one focused mostly on topological concepts, the second part will focus on combinatorial interpretations and constructions associated with a simplicial complex. The primary reference is Chapter 10 of the textbook "**Organized Collapse: An Introduction to Discrete Morse Theory**" by Dmitry N. Kozlov[^2]. $\mathcal{K}$ denotes an abstract simplicial complex unless specified otherwise.
+The current post is a continuation of an earlier post [Discrete Morse Theory - I](https://t-padma.github.io/2023/07/30/discrete-morse.html). While part one focused mostly on topological concepts, the second part focuses on combinatorial interpretations and constructions associated with a simplicial complex. The primary reference is Chapter 10 of the textbook "**Organized Collapse: An Introduction to Discrete Morse Theory**" by Dmitry N. Kozlov[^2]. $\mathcal{K}$ denotes an abstract simplicial complex unless specified otherwise.
 
 ### Poset interpretation of Simplicial complexes
 A simplicial complex $\mathcal{K}$ can be made into a poset by defining a partial order $\geq$ on the set $\mathcal{K}$ of simplices. 
@@ -22,8 +22,8 @@ Conversely, given a poset $P$, we can construct a simplicial complex $\triangle(
 
 ### Matching and simplicial collapse
 Matching is the graph theoretic or combinatorial notion for face posets that we use to better understand simplicial collapses. First, we introduce some graph theory definitions where $G = (V, E)$ represents a graph.
-* A **partial matching in graph** $G$ is a set of edges $\lbrace \lbracea_1,b_1 \rbrace, \cdots, \lbrace a_t,b_t \rbrace \rbrace \subset E$ such that all the vertices $\lbrace a_1, \cdots, a_t,b_1,\cdots,b_t \rbrace$ are *distinct*.
-* If all the vertices are matched, i.e. $\lbrace \lbracea_1,b_1 \rbrace, \cdots, \lbrace a_t,b_t \rbrace \rbrace = E$, then such a matching is called a **complete matching**.
+* A **partial matching in graph** $G$ is a set of edges $\lbrace \lbrace a_1,b_1 \rbrace, \cdots, \lbrace a_t,b_t \rbrace \rbrace \subset E$ such that all the vertices $\lbrace a_1, \cdots, a_t,b_1,\cdots,b_t \rbrace$ are *distinct*.
+* If all the vertices are matched, i.e. $\lbrace \lbrace a_1,b_1 \rbrace, \cdots, \lbrace a_t,b_t \rbrace \rbrace = E$, then such a matching is called a **complete matching**.
 * When I say "matching", I am referring to partial matching. Formally, matching is viewed as a function $\mu: M \rightarrow M$ for $M \subset V$ such that:
   - $v$ and $\mu(v)$ are connected by an edge called the **matching edge** for all $v \in M$.
   - $\forall v \in M$, we have $\mu(\mu(v)) = v$. In other words, the vertex $\mu(v) \in M$ is matched to $v \in M$.
