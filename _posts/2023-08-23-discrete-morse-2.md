@@ -49,7 +49,7 @@ Removing simplices $\sigma$ and $\tau$ from $\mathcal{K}$ is called an **element
 Following is a summary of what we discussed above:
 
 $$
-\mathcal{K} \xrightarrow[\text{convert to}]{\text{poset}} F(\mathcal{K}) \xrightarrow[\text{associate a}]{\text{graph}} \mathcal{H}\left( F(\mathcal{K}) \right)
+\mathcal{K} \xrightarrow[\text{poset}]{\text{convert to}} F(\mathcal{K}) \xrightarrow[\text{graph}]{\text{associate a}} \mathcal{H}\left( F(\mathcal{K}) \right)
 $$
 
 
