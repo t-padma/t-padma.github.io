@@ -72,7 +72,7 @@ Delaunay complex is a **sparse** complex i.e. it does not contain "too many" sim
 There are two equivalent ways of defining the Delaunay complex - one involves the **Voronoi Diagram** of the data set $S$ and the other is more abstract but becomes more understandable once we understand the first definition. [^8] The **Delaunay complex** of a finite set $S$ is the nerve of the Voronoi diagram of $S$. Let $S = \lbrace s_1, s_2, \cdots, s_n \rbrace \subset \mathbb{R}^d$ be a set with $n$ *distinct points*. The define the **Voronoi cell** of $s_i$, $\mathcal{V}(s_i, S)$, as the locus of all points in $\mathbb{R}^d$ that is closest to $s_i$ than any other $s_j$ for $j \neq i$.
 
 $$
-\mathcal{V}(s_i, S) = \left\lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \quad \forall s_j \in S-\lbrace s_i \rbrace \right\rbrace = \bigcap_{j \neq i} \lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \rbrace
+\mathcal{V}(s_i, S) &= \left\lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \quad \forall s_j \in S-\lbrace s_i \rbrace \right\rbrace \ &= \bigcap_{j \neq i} \lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \rbrace
 $$
 
 ![vor](/images/vor.png)
