@@ -93,6 +93,7 @@ A **compound simplicial collapse** of $\mathcal{K}$ is the removal of all simpli
 Intuitively, we would expect a compound simplicial collapse to be made up of a sequence of elementary simplicial collapses. Proposition 9.18 from D. N. Kozlov[^2] textbook gives rigorous proof to the statement of this statement of interest.
 
 **Corollary[^2] :** A sequence of compound collapses from a complex $\mathcal{K}_1$ to a complex $\mathcal{K}_2$ yields a strong deformation retract of $A = \mathrm{Geom}(\mathcal{K}_2)$ on $X = \mathrm{Geom}(\mathcal{K}_1)$.
+
 **Proof:** Refer to Corollary 9.19 in Kozlov's textbook.
 
 **Special Case:** If $\mathcal{K}_1$ is a collapsible complex, then taking $\mathcal{K}_2 = \lbrace \quad \rbrace$, we conclude that $\mathrm{Geom}(\mathcal{K}_1)$ is contractible i.e. it is homotopic to a point (also called null-homotopy).
@@ -107,17 +108,20 @@ $$
 \mathcal{K}_1 \text{ collapsible } \nLeftarrow \mathrm{Geom}(\mathcal{K}_1) \text{ is contractible}
 $$
 
-Theorem 9.24 of Kozlov's textbook states that the converse, and hence the equivalence, holds i.e. $\mathrm{Geom}(\mathcal{K}_1)$ is contractible if there exists collapsible $\tilde{\mathcal{K}}$ such that $\mathcal{K} \subset \tilde{\mathcal{K}}$ and $\tilde{\mathcal{K}} \searrow \mathcal{K}$. This result is the motivation behind the concept of "simplicial expansion".
+Theorem 9.24 of Kozlov's textbook states that the converse, and hence the equivalence, holds i.e. $\mathrm{Geom}(\mathcal{K}_1)$ is contractible if there exists collapsible $\tilde{\mathcal{K}_1}$ such that $\mathcal{K}_1 \subset \tilde{\mathcal{K}_1}$ and $\tilde{\mathcal{K}_1} \searrow \mathcal{K}_1$. This result is the motivation behind the concept of "simplicial expansion" which is defined in the next section.
 
 ### Simple Homotopy Theory
 Assume simplicial complexes $\mathcal{K}$ and $\mathcal{K'}$ such that $\mathcal{K} \searrow \mathcal{K'}$ via an elementary collapse. Then $\mathcal{K}$ is said to be obtained from $\mathcal{K'}$ via an **elementary simplicial expansion** or just simplicial expansion. Note that simplicial expansions are also called **anti-collapses**. The notation used for this is $\mathcal{K'} \nearrow \mathcal{K}$.
 
 $$
-\mathcal{K} \searrow \mathcal{K'} \text{ is an elementary collapse } \Longleftrightarrow \mathcal{K'} \searrow \mathcal{K} \text{ is an elementary expansion. }
+\mathcal{K} \searrow \mathcal{K'} \text{ is an elementary collapse } \Longleftrightarrow \mathcal{K'} \nearrow \mathcal{K} \text{ is an elementary expansion. }
 $$
 
+Simplicial expansion, like a simplicial collapse, can be decomposed as a sequence of elementary simplicial expansions. Now, coming back to Theorem 9.24, we can claim that $(\mathcal{K})$ is collapsible if:
 
-
+$$
+\exists \mathcal{K'} \supseteq \mathcal{K} \text{ such that } \mathcal{K'} \searrow \mathcal{K} \text{ given that } \mathcal{K} \text{ is collapsible i.e. } \mathcal{K}\searrow \lbrace v \rbrace \text{ for some } $v \in \mathcal{K}^0$
+$$
 
 
 [^1]: Bauer, U., and Edelsbrunner, H. (2016), "[The Morse theory of Čech and Delaunay complexes](https://doi.org/10.1090/tran/6991)", Transactions of the American Mathematical Society, American Mathematical Society (AMS).
