@@ -120,9 +120,10 @@ $$
 Simplicial expansion, like a simplicial collapse, can be decomposed as a sequence of elementary simplicial expansions. Now, coming back to Theorem 9.24, we can claim that $(\mathcal{K})$ is collapsible if:
 
 $$
-\exists \mathcal{K'} \supseteq \mathcal{K} \text{ such that } \mathcal{K'} \searrow \mathcal{K} \text{ given that } \mathcal{K} \text{ is collapsible i.e. } \mathcal{K}\searrow \lbrace v \rbrace \text{ for some } $v \in \mathcal{K}^0$
+\exists \mathcal{K'} \supseteq \mathcal{K} \text{ such that } \mathcal{K'} \searrow \mathcal{K} \text{ given that } \mathcal{K} \text{ is collapsible i.e. } \mathcal{K}\searrow \lbrace v \rbrace \text{ for some } v \in \mathcal{K}^0
 $$
 
+Two abstract simplicial complexes are said to have the same **simple homotopy type** if there exists a sequence of elementary collapses and expansions leading from one to another. Such a sequence is called a **formal deformation**.
 
 [^1]: Bauer, U., and Edelsbrunner, H. (2016), "[The Morse theory of Čech and Delaunay complexes](https://doi.org/10.1090/tran/6991)", Transactions of the American Mathematical Society, American Mathematical Society (AMS).
 [^2]: Dmitry N. Kozlov (2020), "[Organized Collapse: An Introduction to Discrete Morse Theory](https://www.maa.org/press/maa-reviews/organized-collapse-an-introduction-to-discrete-morse-theory)", Graduate Studies in Mathematics, American Mathematical Society (AMS).
