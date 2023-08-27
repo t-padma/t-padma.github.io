@@ -71,8 +71,8 @@ $X$ is a topological space with $A \subset X$ and $i: A \hookrightarrow X$ denot
   ![sdretract](\images\strong_def.svg)
   
 ### Simplicial collapse as strong deformation retracts.
-\textbf{Proposition:}[^2] $\mathcal{K}$ is a simplicial complex with $\sigma, \tau \in \mathcal{K}$ such that $\mathrm{dim} \sigma = \mathrm{dim} \tau + 1 \geq 1$. Simplicial collapse corresponding to $\sigma, \tau$ yields a strong deformation retract of $A = \mathrm{Geom}(\mathcal{K}\setminus \lbrace \sigma, \tau \rbrace)$ on $X = \mathrm{Geom}(\mathcal{K})$ where $\mathrm{Geom}(\cdot)$ represents geometric realization of simplicial complex. \
-\textbf{Proof:} Refer Pg. 152-153, proposition 9.9, of the textbook by D. Kozlov [^2]. A simple example of viewing simplicial collapse as a strong deformation retract is given below. Observe how the Geometric realization of $\mathcal{K} \setminus \lbrace \sigma, \tau \rbrace$ is fixed throughout the deformation process.
+\textbf{Proposition}[^2] $\mathcal{K}$ is a simplicial complex with $\sigma, \tau \in \mathcal{K}$ such that $\mathrm{dim} \sigma = \mathrm{dim} \tau + 1 \geq 1$. Simplicial collapse corresponding to $\sigma, \tau$ yields a strong deformation retract of $A = \mathrm{Geom}(\mathcal{K}\setminus \lbrace \sigma, \tau \rbrace)$ on $X = \mathrm{Geom}(\mathcal{K})$ where $\mathrm{Geom}(\cdot)$ represents geometric realization of simplicial complex. \
+\textbf{Proof} Refer Pg. 152-153, proposition 9.9, of the textbook by D. Kozlov [^2]. A simple example of viewing simplicial collapse as a strong deformation retract is given below. Observe how the Geometric realization of $\mathcal{K} \setminus \lbrace \sigma, \tau \rbrace$ is fixed throughout the deformation process.
 
 ![ef](\images\pic_proof.png)
 
@@ -85,17 +85,17 @@ $\mathcal{K}$ is an abstract simplicial complex with $\sigma, \tau \in \mathcal{
   $$
 A **compound simplicial collapse** of $\mathcal{K}$ is the removal of all simplices $\gamma$ such that $\tau \subset \gamma \subset \sigma$.
 
-\textbf{Remarks:} 
+\textbf{Remarks} 
 1. Compound collapse is a generalization of the concept of elementary simplicial collapse in the sense that the difference between the dimensions of $\sigma$ and $\tau$ is strictly more than $1$.
 2. In case of an elementary simplicial collapse, if there exists a simplex $\gamma$ satisfying $\tau \subset \gamma \subset \sigma$, then $\tau = \gamma$.
 3. In short, we call the pair $(\sigma, \tau)$ a compound simplicial collapse.
 
 Intuitively, we would expect a compound simplicial collapse to be made up of a sequence of elementary simplicial collapses. Proposition 9.18 from D. N. Kozlov[^2] textbook gives rigorous proof to the statement of this statement of interest.
 
-\textbf{Corollary:}[^2] A sequence of compound collapses from a complex $\mathcal{K}_1$ to a complex $\mathcal{K}_2$ yields a strong deformation retract of $A = \mathrm{Geom}(\mathcal{K}_2)$ on $X = \mathrm{Geom}(\mathcal{K}_1)$.
-\textbf{Proof:} Refer to Corollary 9.19 in Kozlov's textbook.
+\textbf{Corollary}[^2] A sequence of compound collapses from a complex $\mathcal{K}_1$ to a complex $\mathcal{K}_2$ yields a strong deformation retract of $A = \mathrm{Geom}(\mathcal{K}_2)$ on $X = \mathrm{Geom}(\mathcal{K}_1)$.
+\textbf{Proof} Refer to Corollary 9.19 in Kozlov's textbook.
 
-\textbf{Special Case:} If $\mathcal{K}_1$ is a collapsible complex, then taking $\mathcal{K}_2 = \lbrace \quad \rbrace$, we conclude that $\mathrm{Geom}(\mathcal{K}_1)$ is contractible i.e. it is homotopic to a point (also called null-homotopy).
+\textbf{Special Case} If $\mathcal{K}_1$ is a collapsible complex, then taking $\mathcal{K}_2 = \lbrace \quad \rbrace$, we conclude that $\mathrm{Geom}(\mathcal{K}_1)$ is contractible i.e. it is homotopic to a point (also called null-homotopy).
 
 $$
 \mathcal{K}_1 \text{ collapsible } \implies \mathrm{Geom}(\mathcal{K}_1) \text{ is contractible}
