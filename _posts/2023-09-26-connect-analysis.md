@@ -5,6 +5,7 @@ mathjax: true
 tags: intro brain
 ---
 
+The purpose of the blog is to summarize the fundamentals of the branch of **Connectomics** while following the textbook by Fornito et al[^1]. Connectomics deals with quantifying, visualizing, and understanding the organization of brain networks at different scales of space and time. Since nodes and edges can be viewed as the building blocks of a network, it is important to ask the question - How do we define the nodes and edges of a brain network?
 
 
 
