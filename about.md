@@ -26,7 +26,7 @@ titles:
 key: page-about
 ---
 
-
+I am a third Statistics PhD student at Penn State interested in Topological Data Analysis (TDA). I am interested in understanding and utilizing TDA to analyze neuroimaging data. The purpose of this blog is to document my understanding of TDA, neuroscience, and neuroimaging data analysis that I will learn during my Ph.D.
 
 
 
