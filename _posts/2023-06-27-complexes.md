@@ -79,7 +79,7 @@ $$
 Observe that the Voronoi cells form a cover for the underlying space in such a way that the interiors of these cells are pairwise disjoint.
 
 $$
-\mathbb{R}^d = \bigcup_{i=1}^n \mathcal{V}(s_i, S) \text{ and } \mathrm{Int}(\mathcal{V}(s_i, S)) \cap \mathrm{Int}(\mathcal{V}(s_j, S)) \text{ for } i \neq j
+\mathbb{R}^d = \bigcup_{i=1}^n \mathcal{V}(s_i, S) \quad \text{ such that } \quad \mathrm{Int}(\mathcal{V}(s_i, S)) \cap \mathrm{Int}(\mathcal{V}(s_j, S)) \text{ for } i \neq j
 $$
 
 The collection of Voronoi cells $\lbrace \mathcal{V}(s_i) \rbrace_{i=1}^n$ and their faces constitute the **Voronoi Diagram** of $S$, denoted as $\mathcal{V}(S)$. Nerve of the cover associated with this diagram gives the abstract simplicial complex called **Delaunay Complex**.
