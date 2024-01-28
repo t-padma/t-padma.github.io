@@ -74,7 +74,6 @@ There are two equivalent ways of defining the Delaunay complex - one involves th
 $$
 \mathcal{V}(s_i, S) &= \left\lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \quad \forall s_j \in S-\lbrace s_i \rbrace \right\rbrace \ &= \bigcap_{j \neq i} \lbrace x \in \mathbb{R}^d : \lvert \lvert x - s_i \rvert \rvert \leq \lvert \lvert x - s_j \rvert \rvert \rbrace
 $$
-
 ![vor](/images/vor.png)
 
 Observe that the Voronoi cells form a cover for the underlying space in such a way that the interiors of these cells are pairwise disjoint.
