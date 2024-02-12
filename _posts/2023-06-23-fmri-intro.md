@@ -17,7 +17,7 @@ Brain function requires glucose as an energy source. Hemoglobin transports oxyge
     * Deoxygenated blood is paramagnetic (atoms have random magnetic moment directions, hence a net magnetic moment).
 2. When there is neuronal activity, there is an initial local oxygen consumption which means that deoxyhemoglobin concentration increases locally. This leads to a decrease in BOLD signal called *initial dip* or *fast response*.
 3. However, due to the increase in demand for oxygen, an increased blood flow is observed in order to increase the concentration of oxygenated hemoglobin locally.
-4. After a few seconds, delivery of oxygenated hemoglobin exceeds the demand which increases local oxygenated hemoglobin concentration significantly ($\approx$ 1 to 3 \% above baseline). This gives rise to a BOLD signal that is much stronger than the initial dip.
+4. After a few seconds, delivery of oxygenated hemoglobin exceeds the demand which increases local oxygenated hemoglobin concentration significantly ($\approx$ 1 to 3 % above baseline). This gives rise to a BOLD signal that is much stronger than the initial dip.
 
 Therefore, the BOLD signal can be interpreted as **quantifying regional neuronal activity**.
 
@@ -59,8 +59,8 @@ The protons recover to their original state of orientation i.e. out of phase pre
 **Remarks** 
 * The frequency of precession ($f_0$), described by the **Larmor equation**, depends on the strength of magnetic field $B_0$. The *gyromagnetic ratio* $\gamma$ is a constant that is unique to each nucleus.
 $$f_0 = \gamma B_0 $$
-* The point at which $63%$ of the longitudinal magnetization is *recovered* is called **T1 time**.
-* The time at which $63%$ of the transverse magnetization is *lost* is called **T2 time**.
+* The point at which $63\%$ of the longitudinal magnetization is *recovered* is called **T1 time**.
+* The time at which $63\%$ of the transverse magnetization is *lost* is called **T2 time**.
 * The T1 and T2 times are unique to each tissue type image.
 
 ### Image formation in fMRI
