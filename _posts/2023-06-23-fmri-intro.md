@@ -5,7 +5,7 @@ mathjax: true
 tags: intro fmri physics
 ---
 
-Our brain activity is constantly fluctuating as we engage in different activities on a daily basis. In fact, the brain is quite active even while we are resting with our eyes closed. fMRI is a safe and non-invasive neuroimaging tool that plays quite an essential in understanding brain activity and brain function. The discovery that a change in neuronal activity is associated with a change in local blood flow patterns which in turn leads to a change in blood's magnetic properties is the  fundamental idea behind how fMRI works.[^1] The [YouTube video](https://www.youtube.com/watch?v=P7EqyM1Ar_U) made by the Beckman Institute at UIUC is a useful first introduction to what an fMRI does.
+Our brain activity is constantly fluctuating as we engage in different activities on a daily basis. In fact, the brain is quite active even while we are resting with our eyes closed. fMRI is a safe and non-invasive neuroimaging tool that plays quite an essential role in understanding brain activity and brain function. The discovery that a change in neuronal activity is associated with a change in local blood flow patterns which in turn leads to a change in blood's magnetic properties is the  fundamental idea behind how fMRI works.[^1] The [YouTube video](https://www.youtube.com/watch?v=P7EqyM1Ar_U) made by the Beckman Institute at UIUC is a useful first introduction to what an fMRI does.
 
 ### Blood Oxygen Level Dependent (BOLD) signal
 Brain function requires glucose as an energy source. Hemoglobin transports oxygen to the brain which is required for glucose metabolism (which in turn releases energy). Regional brain function leads to blood flow which in turn changes the amount of oxygen in the neighborhood i.e. the local magnetic field is perturbed. This change in the amount of oxygen, induced by neural activity, gives rise to the BOLD signal. A detailed description is given in the next paragraph.
@@ -49,8 +49,8 @@ At the level of a single proton, **precession** is the spinning of the proton ab
 
 At the level of multiple protons, we initially start with protons precessing about their axis and **out of sync** in such a way that the net magnetization is parallel to $B_0$. When RF pulse energy is applied two things happen
 
-    * some protons reverse their precession directions so that there is no net longitudinal magnetization.
-    * all the protons process in phase temporarily. This *brief* synchronization of precession is **transverse magnetization**.
+* some protons reverse their precession directions so that there is no net longitudinal magnetization.
+* all the protons process in phase temporarily. This *brief* synchronization of precession is **transverse magnetization**.
 
 ![rf](/images/first.png) ![rf](/images/second.png)
 
