@@ -19,18 +19,18 @@ Brain function requires glucose as an energy source. Hemoglobin transports oxyge
 3. However, due to the increase in demand for oxygen, an increased blood flow is observed in order to increase the concentration of oxygenated hemoglobin locally.
 4. After a few seconds, delivery of oxygenated hemoglobin exceeds the demand which increases local oxygenated hemoglobin concentration significantly ($\approx$ 1 to 3 % above baseline). This gives rise to a BOLD signal that is much stronger than the initial dip.
 
-Therefore, the BOLD signal can be interpreted as **quantifying regional neuronal activity**.
+Therefore, the BOLD signal can be interpreted as ** an indirect way of quantifying regional neuronal activity**.
 
 ### Magnetic Resonance 
 BOLD imaging is the most common method of fMRI.[^3] BOLD MRI is also called fMRI. Magnetic resonance is the absorption or emission of electromagnetic radiation by atomic nuclei in response to certain magnetic fields.[^4]  A couple of useful video resources to get introduced to fMRI are:
 * [MRI Physics education materials](https://med.stanford.edu/bmrgroup/education/mri-physics.html), Body MRI Research group, Stanford Medicine
 * [MRI Physics](https://www.youtube.com/watch?v=jLnuPKhKXVM), Johns Hopkins Radiology
 
-1. First of all, fMRI constitutes a large magnet with its own magnetic field $B_0$. Free protons or $H^+$ are the most widely imaged due to the abundance of water in the human body. These $H^+$ ions act like a bar magnet with a positive and a negative pole. 
+1. First of all, the fMRI scanner constitutes a large magnet with its own magnetic field $B_0$. Free protons or $H^+$ are the most widely imaged due to the abundance of water in the human body. These $H^+$ ions act like a bar magnet with a positive and a negative pole. 
 
 ![magnet](/images/magnet.png)
 
-2. The orientation of these protons (as a magnet) is in general random but can be influenced by the field $B_0$ associated with the fMRI. The protons align *parallel* or *antiparallel* to the magnetic field $B_0$. However, a small majority of the protons align with the direction of $B_0$. This gives rise to a **net magnetization vector** in the direction of $B_0$. 
+2. The orientation of these protons (as a magnet) is generally random but can be influenced by the field $B_0$ associated with the MR scanner. The protons align *parallel* or *antiparallel* to the magnetic field $B_0$. However, a small majority of the protons align with the direction of $B_0$. This gives rise to a **net magnetization vector** in the direction of $B_0$. 
 
 ![magnets](/images/orient.png) 
 
@@ -38,23 +38,19 @@ BOLD imaging is the most common method of fMRI.[^3] BOLD MRI is also called fMRI
 
 ![perp](/images/b0.png) ![perp](/images/b1.png) 
 
-4. The net magnetization vector will spiral around the $B_0$ direction which induces an electrical signal. This follows from the Ampere's right-hand rule.
+4. Once the net magnetization vector is tilted, it spirals (around the $B_0$ direction) back to the original direction (i.e. parallel to $B_0$). This induces an electrical signal which follows from the Ampere's right-hand rule. 
 
 ![precess](/images/precess.png) ![perp](/images/recover.png) 
 
 #### What is happening at the proton level?
-At the level of a single proton, **precession** is the spinning of the proton about its own axis. In the presence of a radiofrequency (RF) signal (shown below in red), the proton begins to precess in a different direction and with an angle (w.r.t the axis) that depends on the strength and duration of the RF pulse. This leads to a change in **longitudinal magnetization**.
-
-![rf](/images/rf.png) ![rf](/images/rf2.png) 
-
-At the level of multiple protons, we initially start with protons precessing about their axis and **out of sync** in such a way that the net magnetization is parallel to $B_0$. When RF pulse energy is applied two things happen
+At the level of a single proton, **precession** is the spinning of the proton about its own axis. In the presence of a radiofrequency (RF) signal (shown below in red), the proton begins to precess in a different direction and with an angle (w.r.t the axis) that depends on the strength and duration of the RF pulse. Therefore, at the level of multiple protons, we initially start with protons precessing about their axis and **out of sync** in such a way that the net magnetization is parallel to $B_0$ since the number of protons precessing parallelly is slightly more than that of the anti-parallel protons. This leads to a net **longitudinal magnetization** parallel to $B_0$. However, after excitation (i.e. RF pulse) 
 
 * some protons reverse their precession directions so that there is no net longitudinal magnetization.
-* all the protons process in phase temporarily. This *brief* synchronization of precession is **transverse magnetization**.
+* all the protons process in phase temporarily.
 
-![rf](/images/first.png) ![rf](/images/second.png)
+This *brief* synchronization of precession gives the net **transverse magnetization**.
 
-The protons recover to their original state of orientation i.e. out of phase precession with net magnetization in the direction of $B_0$. Hence the transverse signal *decays* and the longitudinal signal *recovers*. This decay will look like a spiraling of the net magnetization vector about the $B_0$ direction. (as shown in the picture in point four) This recovery is also called **relaxation**.
+However, this synchronization is temporary i.e. the protons recover to their original state of disorder, which is out of phase precession with net magnetization in the direction of $B_0$. Hence the transverse signal *decays* and the longitudinal signal *recovers*. This decay will look like a spiraling of the net magnetization vector about the $B_0$ direction. (as shown in the picture in point four) This recovery is also called **relaxation**.
 
 **Remarks** 
 * The frequency of precession ($f_0$), described by the **Larmor equation**, depends on the strength of magnetic field $B_0$. The *gyromagnetic ratio* $\gamma$ is a constant that is unique to each nucleus.
