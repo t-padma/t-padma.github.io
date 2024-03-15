@@ -19,7 +19,7 @@ Brain function requires glucose as an energy source. Hemoglobin transports oxyge
 3. However, due to the increase in demand for oxygen, an increased blood flow is observed in order to increase the concentration of oxygenated hemoglobin locally.
 4. After a few seconds, delivery of oxygenated hemoglobin exceeds the demand which increases local oxygenated hemoglobin concentration significantly ($\approx$ 1 to 3 % above baseline). This gives rise to a BOLD signal that is much stronger than the initial dip.
 
-Therefore, the BOLD signal can be interpreted as ** an indirect way of quantifying regional neuronal activity**.
+Therefore, the BOLD signal can be interpreted as **an indirect way of quantifying regional neuronal activity**.
 
 ### Magnetic Resonance 
 BOLD imaging is the most common method of fMRI.[^3] BOLD MRI is also called fMRI. Magnetic resonance is the absorption or emission of electromagnetic radiation by atomic nuclei in response to certain magnetic fields.[^4]  A couple of useful video resources to get introduced to fMRI are:
