@@ -43,7 +43,9 @@ BOLD imaging is the most common method of fMRI.[^3] BOLD MRI is also called fMRI
 ![precess](/images/precess.png) ![perp](/images/recover.png) 
 
 #### Microscopic picture of MR
-At the level of a single proton, **precession** is the spinning of the proton about its own axis. In the presence of a radiofrequency (RF) signal (shown below in red), the proton begins to precess in a different direction and with an angle (w.r.t the axis) that depends on the strength and duration of the RF pulse. Therefore, at the level of multiple protons, we initially start with protons precessing about their axis and **out of sync** in such a way that the net magnetization is parallel to $B_0$ since the number of protons precessing parallelly is slightly more than that of the anti-parallel protons. This leads to a net **longitudinal magnetization** parallel to $B_0$. However, after excitation (i.e. RF pulse) 
+At the level of a single proton, each proton **precesses** about its axis. Hence, each proton is associated with a magnetic moment vector parallel to proton's axis of precession. Consider a tissue sample in the absence of an external magnetic field. The magnetic moments of protons in the sample are oriented randomly. This leads to a net zero magnetic moment for the tissue sample.
+
+In the presence of a radiofrequency (RF) signal (shown below in red), the proton begins to precess in a different direction and with an angle (w.r.t the axis) that depends on the strength and duration of the RF pulse. Therefore, at the level of multiple protons, we initially start with protons precessing about their axis and **out of sync** in such a way that the net magnetization is parallel to $B_0$ since the number of protons precessing parallelly is slightly more than that of the anti-parallel protons. This leads to a net **longitudinal magnetization** parallel to $B_0$. However, after excitation (i.e. RF pulse) 
 
 * some protons reverse their precession directions so that there is no net longitudinal magnetization.
 * all the protons process in phase temporarily.
