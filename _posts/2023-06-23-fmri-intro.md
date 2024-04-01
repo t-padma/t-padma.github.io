@@ -21,12 +21,12 @@ Brain function requires glucose as an energy source. Hemoglobin transports oxyge
 
 Therefore, the BOLD signal can be interpreted as **an indirect way of quantifying regional neuronal activity**.
 
-### Magnetic Resonance 
+### Macroscopic picture of MR
 BOLD imaging is the most common method of fMRI.[^3] BOLD MRI is also called fMRI. Magnetic resonance is the absorption or emission of electromagnetic radiation by atomic nuclei in response to certain magnetic fields.[^4]  A couple of useful video resources to get introduced to fMRI are:
 * [MRI Physics education materials](https://med.stanford.edu/bmrgroup/education/mri-physics.html), Body MRI Research group, Stanford Medicine
 * [MRI Physics](https://www.youtube.com/watch?v=jLnuPKhKXVM), Johns Hopkins Radiology
 
-1. First of all, the fMRI scanner constitutes a large magnet with its own magnetic field $B_0$. Free protons or $H^+$ are the most widely imaged due to the abundance of water in the human body. These $H^+$ ions act like a bar magnet with a positive and a negative pole. 
+1. First of all, the fMRI scanner constitutes a large magnet with its magnetic field $B_0$. Free protons or $H^+$ are the most widely imaged due to the abundance of water in the human body. These $H^+$ ions act like a bar magnet with a positive and a negative pole. 
 
 ![magnet](/images/magnet.png)
 
@@ -42,7 +42,7 @@ BOLD imaging is the most common method of fMRI.[^3] BOLD MRI is also called fMRI
 
 ![precess](/images/precess.png) ![perp](/images/recover.png) 
 
-#### What is happening at the proton level?
+#### Microscopic picture of MR
 At the level of a single proton, **precession** is the spinning of the proton about its own axis. In the presence of a radiofrequency (RF) signal (shown below in red), the proton begins to precess in a different direction and with an angle (w.r.t the axis) that depends on the strength and duration of the RF pulse. Therefore, at the level of multiple protons, we initially start with protons precessing about their axis and **out of sync** in such a way that the net magnetization is parallel to $B_0$ since the number of protons precessing parallelly is slightly more than that of the anti-parallel protons. This leads to a net **longitudinal magnetization** parallel to $B_0$. However, after excitation (i.e. RF pulse) 
 
 * some protons reverse their precession directions so that there is no net longitudinal magnetization.
