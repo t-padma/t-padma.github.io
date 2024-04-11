@@ -8,7 +8,7 @@ tags: fmri brain
 **Neurovascular coupling** is one of the important principles on which fMRI image acquisition relies. Neurovascular coupling describes the relationship between neuronal activity and associated changes in blood flow. Angelo Mosso (1846–1910) was an early scientist trying to quantify human brain neuronal activity [^3]. He was the first to propose that intellectual or emotional activity is followed by local changes in the brain's blood flow. Although the resources at Mosso's time were limited, it is now known that the regional rise in blood flow is necessary to meet the activated brain regions' increased demand for oxygen and glucose. This discovery is the basis for multiple modern functional neuroimaging techniques we use today[^2]. The objective of this blog is two-fold:
 * Understand the science behind neurovascular coupling.
 * Formulate a mechanistic model describing neurovascular coupling.
-The primary reference for the blog post is the NeuroImage article by Sten, Lundengård, et al.[^1]
+The primary reference for the blog post is the NeuroImage article by Sten, Lundengård, et al[^1] where the authors propose an extension of the existing mechanistic model for neurovascular coupling.
 
 
 
