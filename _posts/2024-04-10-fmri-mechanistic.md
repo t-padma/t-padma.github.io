@@ -26,7 +26,7 @@ The membrane potential of a neuron is not constant. The instantaneous membrane p
 
 Neurotransmitters that make a neuron's membrane potential more positive (e.g. $-70mV$ to $-60mV$) are called excitatory neurotransmitters. **Glutamate** is the most common excitatory neurotransmitter in the brain. Similarly, inhibitory neurotransmitters make the neuron's membrane potential more negative. **GABA** ($\gamma$-aminobutyric acid) is one of the most important inhibitory neurotransmitters. Different neurotransmitters attach to different pumps and/or ion channels on the post-synaptic terminal. 
 
-![act](/images/main-pic.png)[^6]
+![act](/images/main-pic.png)[^7]
 
 [^1]: Sten, S., Lundengård, K., Witt, S. T., Cedersund, G., Elinder, F., and Engström, M. (2017), “_Neural inhibition can explain negative BOLD responses: A mechanistic modelling and fMRI study_,” **NeuroImage**, Elsevier BV. DOI: 10.1016/j.neuroimage.2017.07.002
 [^2]: Yipeng Liu, “_Tensors for Data Processing_” (2022), Elsevier. DOi: 10.1016/C2020-0-01790-1
@@ -34,3 +34,4 @@ Neurotransmitters that make a neuron's membrane potential more positive (e.g. $-
 [^4]: [Brain Basics: The Life and Death of a Neuron](https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-life-and-death-neuron), Public information provided by National Institute of Neurological Disorders and Stroke
 [^5]: Kerr, S.C., Weigel, E., Spencer, C.C., & Garton, D. 2023 edition. Organismal Biology, First published online in 2017. https://organismalbio.biosci.gatech.edu/
 [^6]: Khan Academy lecture on [Neurotransmitters and receptors](https://www.khanacademy.org/science/biology/human-biology/neuron-nervous-system/a/neurotransmitters-their-receptors).
+[^7]: Scott A. Huettel, Allen W. Song, and Gregory McCarthy,[_Functional Magnetic Resonance Imaging_](https://global.oup.com/ushe/product/functional-magnetic-resonance-imaging-9780878936274?cc=in&lang=en&q=sinauer), 3rd edition, ISBN: 9780878936274
