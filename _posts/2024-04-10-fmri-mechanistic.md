@@ -24,13 +24,16 @@ The membrane potential of a neuron is not constant. The instantaneous membrane p
 
 ![act](/images/action.png)[^6]
 
-Neurotransmitters are called excitatory neurotransmitters if they make a neuron's membrane potential more positive (e.g. $-70mV$ to $-60mV$). **Glutamate** is the most common excitatory neurotransmitter in the brain. Similarly, inhibitory neurotransmitters make the neuron's membrane potential more negative. **GABA** ($\gamma$-aminobutyric acid) is one of the most important inhibitory neurotransmitters in the brain. Different neurotransmitters attach to different pumps and/or ion channels on the post-synaptic terminal. Figure 4 provides a summary of how neurons "spike" via the release of neurotransmitters. Step-by-step modeling of this biological process is provided.
+Neurotransmitters are called excitatory neurotransmitters if they make a neuron's membrane potential more positive (e.g. $-70mV$ to $-60mV$). **Glutamate** is the most common excitatory neurotransmitter in the brain due to its **depolarizing nature**. Similarly, inhibitory neurotransmitters make the neuron's membrane potential more negative. **GABA** ($\gamma$-aminobutyric acid) is one of the most important inhibitory neurotransmitters that has a **hyperpolarizing nature** on neurons. Different neurotransmitters attach to different pumps and/or ion channels on the post-synaptic terminal. Figure 4 provides a summary of how neurons "spike" via the release of neurotransmitters. Step-by-step modeling of this biological process is provided.
 
 ![act](/images/main-pic.png)[^7]   
 
 1. Action potential travels down the axon i.e. the pre-synaptic terminal experiences a signal as a reduction in membrane potential to $\approx -50mV$. This signal is modeled using the $Stimulus$ function:
    $$Stimulus(t) = k \cdot \mathbb{I}( \text{ } t \in [t_{on}, t_{off}] \text{ })$$
-2. 
+2. Ion channels selective for $Ca^{2+}$ open after experiencing the signal i.e. $Ca^{2+}$ enters the pre-synaptic terminal.
+3. There are sac-like structures called vesicles that encapsulate glutamate in the neuron. Entry of $Ca^{2+}$ ions initiates a process that migrates the vesicles to fuse with the pre-synaptic terminal and eventually release glutamate into the synaptic cleft.
+4. Glutamate acts as a precursor for GABA. In other words, GABA is formed from glutamate via the addition of glutamate decarboxylase and vitamin B6[^8]. Note that GABA is formed in vivo by a metabolic pathway referred to as the GABA shunt[^9]. Entry of $Ca^{2+}$ depolarizes the pre-synaptic neuron and stimulates the release of GABA into the synaptic cleft.
+5. Glutamate and GABA diffuse across the synaptic cleft to interact with different receptors on the post-synaptic cleft. Interaction with receptors opens ion-channels for different ions.
   
 
 [^1]: Sten, S., Lundengård, K., Witt, S. T., Cedersund, G., Elinder, F., and Engström, M. (2017), “_Neural inhibition can explain negative BOLD responses: A mechanistic modelling and fMRI study_,” **NeuroImage**, Elsevier BV. DOI: 10.1016/j.neuroimage.2017.07.002
@@ -40,3 +43,5 @@ Neurotransmitters are called excitatory neurotransmitters if they make a neuron'
 [^5]: Kerr, S.C., Weigel, E., Spencer, C.C., & Garton, D. 2023 edition. Organismal Biology, First published online in 2017. https://organismalbio.biosci.gatech.edu/
 [^6]: Khan Academy lecture on [Neurotransmitters and receptors](https://www.khanacademy.org/science/biology/human-biology/neuron-nervous-system/a/neurotransmitters-their-receptors).
 [^7]: Scott A. Huettel, Allen W. Song, and Gregory McCarthy,[_Functional Magnetic Resonance Imaging_](https://global.oup.com/ushe/product/functional-magnetic-resonance-imaging-9780878936274?cc=in&lang=en&q=sinauer), 3rd edition, ISBN: 9780878936274
+[^8]: Allen MJ, Sabir S, Sharma S. [GABA Receptor](https://www.ncbi.nlm.nih.gov/books/NBK526124/). [Updated 2023 Feb 13]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2024 Jan-.
+[^9]: Olsen RW, DeLorey TM. [GABA Synthesis, Uptake, and Release](https://www.ncbi.nlm.nih.gov/books/NBK27979/). In: Siegel GJ, Agranoff BW, Albers RW, et al., editors. _Basic Neurochemistry: Molecular, Cellular and Medical Aspects_. 6th edition. Philadelphia: Lippincott-Raven; 1999. 
