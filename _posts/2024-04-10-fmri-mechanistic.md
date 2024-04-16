@@ -24,9 +24,14 @@ The membrane potential of a neuron is not constant. The instantaneous membrane p
 
 ![act](/images/action.png)[^6]
 
-Neurotransmitters that make a neuron's membrane potential more positive (e.g. $-70mV$ to $-60mV$) are called excitatory neurotransmitters. **Glutamate** is the most common excitatory neurotransmitter in the brain. Similarly, inhibitory neurotransmitters make the neuron's membrane potential more negative. **GABA** ($\gamma$-aminobutyric acid) is one of the most important inhibitory neurotransmitters. Different neurotransmitters attach to different pumps and/or ion channels on the post-synaptic terminal. 
+Neurotransmitters are called excitatory neurotransmitters if they make a neuron's membrane potential more positive (e.g. $-70mV$ to $-60mV$). **Glutamate** is the most common excitatory neurotransmitter in the brain. Similarly, inhibitory neurotransmitters make the neuron's membrane potential more negative. **GABA** ($\gamma$-aminobutyric acid) is one of the most important inhibitory neurotransmitters in the brain. Different neurotransmitters attach to different pumps and/or ion channels on the post-synaptic terminal. Figure 4 provides a summary of how neurons "spike" via the release of neurotransmitters. Step-by-step modeling of this biological process is provided.
 
-![act](/images/main-pic.png)[^7]
+![act](/images/main-pic.png)[^7]   
+
+1. Action potential travels down the axon i.e. the pre-synaptic terminal experiences a signal as a reduction in membrane potential to $\approx -50mV$. This signal is modeled using the $Stimulus$ function:
+   $$Stimulus(t) = k \cdot \mathbb{I}( \text{ } t \in [t_{on}, t_{off}] \text{ })$$
+2. 
+  
 
 [^1]: Sten, S., Lundengård, K., Witt, S. T., Cedersund, G., Elinder, F., and Engström, M. (2017), “_Neural inhibition can explain negative BOLD responses: A mechanistic modelling and fMRI study_,” **NeuroImage**, Elsevier BV. DOI: 10.1016/j.neuroimage.2017.07.002
 [^2]: Yipeng Liu, “_Tensors for Data Processing_” (2022), Elsevier. DOi: 10.1016/C2020-0-01790-1
