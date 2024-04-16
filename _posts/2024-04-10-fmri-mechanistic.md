@@ -33,7 +33,9 @@ Neurotransmitters are called excitatory neurotransmitters if they make a neuron'
 2. Ion channels selective for $Ca^{2+}$ open after experiencing the signal i.e. $Ca^{2+}$ enters the pre-synaptic terminal.
 3. There are sac-like structures called vesicles that encapsulate glutamate in the neuron. Entry of $Ca^{2+}$ ions initiates a process that migrates the vesicles to fuse with the pre-synaptic terminal and eventually release glutamate into the synaptic cleft.
 4. Glutamate acts as a precursor for GABA. In other words, GABA is formed from glutamate via the addition of glutamate decarboxylase and vitamin B6[^8]. Note that GABA is formed in vivo by a metabolic pathway referred to as the GABA shunt[^9]. Entry of $Ca^{2+}$ depolarizes the pre-synaptic neuron and stimulates the release of GABA into the synaptic cleft.
-5. Glutamate and GABA diffuse across the synaptic cleft to interact with different receptors on the post-synaptic cleft. Interaction with receptors opens ion-channels for different ions.
+5. Glutamate and GABA diffuse across the synaptic cleft to interact with different receptors on the post-synaptic cleft. Interaction with receptors opens ion channels for the post-synaptic neuron. This can be mathematically modeled under the assumption that GABA and glutamate are the only inhibitory and excitatory neurotransmitters in the brain.
+   $$\frac{\mathrm{d}[Glut]}{\mathrm{d}t} = k_{Glut} \cdot Stimulus(t) - sink_{Glut} \cdot [Glut]$$
+   $$\frac{\mathrm{d}[GABA]}{\mathrm{d}t} = k_{GABA} \cdot Stimulus(t) - sink_{GABA} \cdot [GABA]$$
   
 
 [^1]: Sten, S., Lundengård, K., Witt, S. T., Cedersund, G., Elinder, F., and Engström, M. (2017), “_Neural inhibition can explain negative BOLD responses: A mechanistic modelling and fMRI study_,” **NeuroImage**, Elsevier BV. DOI: 10.1016/j.neuroimage.2017.07.002
