@@ -43,9 +43,11 @@ After "sufficient" depolarization of the neuron due to Glutamate's interaction w
 
 ![astro](/images/astro.png)[^7]
 
-The concentration of astrocytic $Ca^{2+}$, denoted by $[Ca^{2+}]$, in the presence of a drug **Diazepam** is modelled using the following equation:
+Note that the inhibitory actions of GABA become more effective in the presence of a drug called **Diazepam**. The concentration of astrocytic $Ca^{2+}$, denoted by $[Ca^{2+}]$, in the presence of Diazepam is modeled using the following equation:
 
 $$\frac{\mathrm{d}[Ca^{2+}]}{\mathrm{d}t} = k_{Ca} \cdot (1 + k_3 [Glut]) \left( 1 + \dfrac{[GABA]}{k_4}\left [ 1 + \dfrac{1}{1 + \frac{k^{n}_D}{c^{n}_D} }  \right]  \right) - sink_{Ca}[Ca^{2+}]$$ 
+
+In the equation describing astrocytic $Ca^{2+}$ concentration, $k_3, k_4, sink_{Ca}$ and $kk_{Ca}$ are kinetic rate parameters measured in $mol ml^{-1} sec^{-1}$ 
 
 
 
