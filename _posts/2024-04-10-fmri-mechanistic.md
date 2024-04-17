@@ -40,7 +40,14 @@ Neurotransmitters are called excitatory neurotransmitters if they make a neuron'
 
 ### Role of Astrocytes
 After "sufficient" depolarization of the neuron due to Glutamate's interaction with its receptor, certain voltage-dependent ion channels for $Ca^{2+}$ open up, allowing for an influx of $Ca^{2+}$ ions into the astrocyte process. In other words, Glutamate increases the concentration of astrocytic $Ca^{2+}$. On the other hand, GABA binds to the $\mathrm{GABA}_{A}$ receptor which reduces the probability of opening the ion channels associated with astrocytic $Ca^{2+}$. Hence, GABA controls the astrocytic $Ca^{2+}$ concentration. The involvement of astrocytes is illustrated in Figure 5.
-  
+
+![astro](/images/astro.png)[^7]
+
+The concentration of astrocytic $Ca^{2+}$, denoted by $[Ca^{2+}]$, in the presence of a drug **Diazepam** is modelled using the following equation:
+
+$$\frac{\mathrm{d}[Ca^{2+}]}{\mathrm{d}t} = k_{Ca} \cdot (1 + k_3 [Glut]) \left( 1 + \dfrac{[GABA]}{k_4}\left [ 1 + \dfrac{1}{1 + \frac{k^{n}_D}{c^{n}_D} }  \right]  \right) - sink_{Ca}[Ca^{2+}]$$ 
+
+
 
 [^1]: Sten, S., Lundengård, K., Witt, S. T., Cedersund, G., Elinder, F., and Engström, M. (2017), “_Neural inhibition can explain negative BOLD responses: A mechanistic modelling and fMRI study_,” **NeuroImage**, Elsevier BV. DOI: 10.1016/j.neuroimage.2017.07.002
 [^2]: Yipeng Liu, “_Tensors for Data Processing_” (2022), Elsevier. DOi: 10.1016/C2020-0-01790-1
