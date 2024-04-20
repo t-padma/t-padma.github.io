@@ -54,8 +54,26 @@ In the equation describing astrocytic $Ca^{2+}$ concentration,
 - $c_D$ denotes the blood plasma concentration of diazepam.
 - $k_D$ denotes the dissociation coefficient while $n$ is the Hill coefficient.
 
+Notice that Equation 3 models GABA and glutamate's inhibitory and excitatory relationship with astrocytic $Ca^{2+}$ based on whether the terms $[GABA]$ and $[Glut]$ are in the numerator or denominator. Additionally, the term \dfrac{1}{1 + \frac{k^{n}_D}{c^{n}_D}, multiplied to $[GABA]$, models the boosted inhibitory nature of $GABA$ in the presence of diazepam.
 
+An increase in astrocytic $Ca^{2+}$ concentration initiates an enzymatic process, eventually increasing intracellular Arachidonic Acid (AA). Figure 6 gives a slightly more detailed picture of AA formation. For mathematical simplicity, these details are ignored and AA concentration is modeled as follows:
 
+$$
+\frac{\mathrm{d}[AA]}{\mathrm{d}t} = k_{pl}[Ca^{2+}] - (k_{vc} + k_{vd})[AA] \quad \quad \quad \cdots Eq \text{ } 4$
+$$
+
+- The rate constant $k_{pl}$ models the crease in $[AA]$ with an increase in $[Ca^{2+}]$.
+- The constants $k_{vc}$ and $k_{vd}$ model the degradation or transformation of AA  into different **vasoactive substances** i.e. the substances that increase/decrease the blood vessel's diameter. Vasoactive substances can promote _vasodilation_ (increase diameter, Eg. $PGE_2$) or _vasoconstriction_ (reduce the diameter, Eg. $20-HETE$).
+
+The release of these vasoactive substances controls blood flow and blood volume, which starts the vascular side of hemodynamics. This blood flow in turn controls the amount of oxyhemoglobin ($oHb$), deoxy-hemoglobin (dHb), oxygen ($O_2$), and glucose flowing in and out of the local blood vessel.
+
+![vaso](/images/vaso.png)[^1]
+
+It has been established previously that blood flow ($v_{flow}$) and blood volume ($v_{bv}$) have a non-linear relationship[^1]. The authors model this non-linear relationship as follows:
+
+$$
+v_{bv} = (v_{flow})^{k_bv}
+$$
 [^1]: Sten, S., Lundengård, K., Witt, S. T., Cedersund, G., Elinder, F., and Engström, M. (2017), “_Neural inhibition can explain negative BOLD responses: A mechanistic modelling and fMRI study_,” **NeuroImage**, Elsevier BV. DOI: 10.1016/j.neuroimage.2017.07.002
 [^2]: Yipeng Liu, “_Tensors for Data Processing_” (2022), Elsevier. DOi: 10.1016/C2020-0-01790-1
 [^3]: Barr, W. B., and Bieliauskas, L. A. (eds.) (2016), Chapter 13: History of Functional Brain Imaging,  “_The Oxford Handbook of the History of Clinical Neuropsychology_,” Oxford University Press.
