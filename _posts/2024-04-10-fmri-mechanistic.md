@@ -74,6 +74,7 @@ It has been established previously that blood flow ($v_{flow}$) and blood volume
 $$
 v_{bv} = (v_{flow})^{k_bv}
 $$
+
 [^1]: Sten, S., Lundengård, K., Witt, S. T., Cedersund, G., Elinder, F., and Engström, M. (2017), “_Neural inhibition can explain negative BOLD responses: A mechanistic modelling and fMRI study_,” **NeuroImage**, Elsevier BV. DOI: 10.1016/j.neuroimage.2017.07.002
 [^2]: Yipeng Liu, “_Tensors for Data Processing_” (2022), Elsevier. DOi: 10.1016/C2020-0-01790-1
 [^3]: Barr, W. B., and Bieliauskas, L. A. (eds.) (2016), Chapter 13: History of Functional Brain Imaging,  “_The Oxford Handbook of the History of Clinical Neuropsychology_,” Oxford University Press.
