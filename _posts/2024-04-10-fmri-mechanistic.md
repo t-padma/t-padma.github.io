@@ -65,7 +65,7 @@ $$
 - The rate constant $k_{pl}$ models the crease in $[AA]$ with an increase in $[Ca^{2+}]$.
 - The constants $k_{vc}$ and $k_{vd}$ model the degradation or transformation of AA  into different **vasoactive substances** i.e. the substances that increase/decrease the blood vessel's diameter. Vasoactive substances can promote _vasodilation_ (increase diameter, Eg. $PGE_2$) or _vasoconstriction_ (reduce the diameter, Eg. $20-HETE$).
 
-The release of these vasoactive substances controls blood flow and blood volume, which starts the vascular side of hemodynamics. This blood flow in turn controls the amount of oxyhemoglobin ($oHb$), deoxy-hemoglobin (dHb), oxygen ($O_2$), and glucose flowing in and out of the local blood vessel.
+The release of these vasoactive substances controls blood flow and blood volume, which starts the vascular side of hemodynamics. This blood flow in turn controls the amount of oxyhemoglobin ($oHb$), deoxyhemoglobin (dHb), oxygen ($O_2$), and glucose flowing in and out of the local blood vessel[^1].
 
 ![vaso](/images/vaso.png)[^1]
 
