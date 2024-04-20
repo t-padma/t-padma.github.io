@@ -29,13 +29,15 @@ Neurotransmitters are called excitatory neurotransmitters if they make a neuron'
 ![act](/images/main-pic.png)[^7]   
 
 1. Action potential travels down the axon i.e. the pre-synaptic terminal experiences a signal as a reduction in membrane potential to $\approx -50mV$. This signal is modeled using the $Stimulus$ function:
-   $$Stimulus(t) = k \cdot \mathbb{I}( \text{ } t \in [t_{on}, t_{off}] \text{ })$$
+
+   $$Stimulus(t) = k \cdot \mathbb{I}( \text{ } t \in [t_{on}, t_{off}] \text{ }) \quad \quad \quad Eq \text{ } 1$$
 2. Ion channels selective for $Ca^{2+}$ open after experiencing the signal i.e. $Ca^{2+}$ enters the pre-synaptic terminal.
 3. There are sac-like structures called vesicles that encapsulate glutamate in the neuron. Entry of $Ca^{2+}$ ions initiates a process that migrates the vesicles to fuse with the pre-synaptic terminal and eventually release glutamate into the synaptic cleft.
 4. Glutamate acts as a precursor for GABA. In other words, GABA is formed from glutamate by adding glutamate decarboxylase and vitamin B6[^8]. Note that GABA is formed in vivo by a metabolic pathway referred to as the GABA shunt[^9]. Entry of $Ca^{2+}$ depolarizes the pre-synaptic neuron and stimulates the release of GABA into the synaptic cleft.
 5. Glutamate and GABA diffuse across the synaptic cleft to interact with different receptors on the post-synaptic cleft. Interaction with receptors opens ion channels for the post-synaptic neuron. This can be mathematically modeled under the assumption that GABA and glutamate are the brain's only inhibitory and excitatory neurotransmitters.
-   $$\frac{\mathrm{d}[Glut]}{\mathrm{d}t} = k_{Glut} \cdot Stimulus(t) - sink_{Glut} \cdot [Glut]$$
-   $$\frac{\mathrm{d}[GABA]}{\mathrm{d}t} = k_{GABA} \cdot Stimulus(t) - sink_{GABA} \cdot [GABA]$$
+   $$\frac{\mathrm{d}[Glut]}{\mathrm{d}t} = k_{Glut} \cdot Stimulus(t) - sink_{Glut} \cdot [Glut] \quad \quad \quad - Eq \text{ } 2.1$$
+   
+   $$\frac{\mathrm{d}[GABA]}{\mathrm{d}t} = k_{GABA} \cdot Stimulus(t) - sink_{GABA} \cdot [GABA] \quad \quad \quad - Eq \text{ } 2.2$$
 6. Glutamate interacts with receptors which activate ion channels that allow an influx of different cations. Therefore, glutamate depolarizes the neuron i.e. makes it more likely for the neuron to fire. On the other hand, GABA interacts with receptors that activate ion channels to hyperpolarize the neuron i.e. they make the neuron less likely to fire. Therefore, the net polarization of a neuron and its probability to fire depends on the net effect of glutamate and GABA coming from connected neurons.
 
 ### Role of Astrocytes
@@ -45,7 +47,7 @@ After "sufficient" depolarization of the neuron due to Glutamate's interaction w
 
 Note that the inhibitory actions of GABA become more effective in the presence of a drug called **Diazepam**. The concentration of astrocytic $Ca^{2+}$, denoted by $[Ca^{2+}]$, in the presence of Diazepam is modeled using the following equation:
 
-$$\frac{\mathrm{d}[Ca^{2+}]}{\mathrm{d}t} = k_{Ca} \cdot (1 + k_3 [Glut]) \left( 1 + \dfrac{[GABA]}{k_4}\left [ 1 + \dfrac{1}{1 + \frac{k^{n}_D}{c^{n}_D} }  \right]  \right) - sink_{Ca}[Ca^{2+}]$$ 
+$$\frac{\mathrm{d}[Ca^{2+}]}{\mathrm{d}t} = k_{Ca} \cdot (1 + k_3 [Glut]) \left( 1 + \dfrac{[GABA]}{k_4}\left [ 1 + \dfrac{1}{1 + \frac{k^{n}_D}{c^{n}_D} }  \right]  \right) - sink_{Ca}[Ca^{2+}] \quad \quad Eq \text{ } 3$$ 
 
 In the equation describing astrocytic $Ca^{2+}$ concentration, $k_3, k_4, sink_{Ca}$ and $kk_{Ca}$ are kinetic rate parameters measured in $mol ml^{-1} sec^{-1}$ 
 
