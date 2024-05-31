@@ -5,10 +5,11 @@ mathjax: true
 tags: intro git
 ---
 
-The blog's primary objective is to provide a big picture of what Git Bash is, its importance, and how it is used on Windows Operating System. Software Carpentry's course ["The Unix Shell"](https://swcarpentry.github.io/shell-novice/01-intro.html)[^1] is the primary reference for the blog. The necessary download instructions are given in [this link](https://carpentries.github.io/workshop-template/install_instructions/#shell) under the title "The Bash Shell". Following these instructions on a Windows computer downloads Git BASH, Git GUI, and Git CMD. A few other useful resources to get started with Unix are:
+The blog's primary objective is to provide a big picture of what Git Bash is, its importance, and how it is used on a Windows Operating System. Software Carpentry's course ["The Unix Shell"](https://swcarpentry.github.io/shell-novice/01-intro.html)[^1] is the primary reference for the blog. The necessary download instructions are given in [this link](https://carpentries.github.io/workshop-template/install_instructions/#shell) under the title "The Bash Shell". Following these instructions on a Windows computer downloads Git BASH, Git GUI, and Git CMD. A few other useful resources to get started with Unix are:
 
 1. [Unix Tutorial](https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/background_install/unix_tutorial/index.html) by AFNI.
 2. [Unix for Neuroimagers](https://andysbrainbook.readthedocs.io/en/latest/unix/Unix_Intro.html), Andy's Brain Book.
+3. [A Basic UNIX tutorial](https://fsl.fmrib.ox.ac.uk/fslcourse/unix_intro/), part of the FSL course taught at Idaho State University.
 
 
 
