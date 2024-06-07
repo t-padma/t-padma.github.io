@@ -12,6 +12,13 @@ Although a Graphical User Interface (GUI) is easier to use, a Command-line Inter
 
 Note that most resources[^2][^3][^4] that I came across, focus on the Unix shell, which is compatible with a Mac or Linux OS. Moreover, learning Unix shell basics is important when working with Neuroimaging Software like AFNI and FSL. The blog provides an overview of Unix Shell basics.
 
+![terminal](/images/terminal.png)
+
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
+
 
 
 
