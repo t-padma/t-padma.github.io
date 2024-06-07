@@ -17,17 +17,25 @@ Note that most resources[^2][^3][^4] that I came across, focus on the Unix shell
 
 The Git BASH terminal allows us to communicate with the computer using text that has a few major components. 
 
-To begin with, when the shell is first opened, we will observe a **prompt** or `$`, indicating that the shell is waiting for input. A text cursor follows the prompt which indicates where our typing will appear. In the example above, `ls` is the **command**, `-F` is the option, and `"./Desktop"` is called the argument. 
+To begin with, when the shell is first opened, we will observe a **prompt** or `$`, indicating that the shell is waiting for input. A text cursor follows the prompt which indicates where our typing will appear. 
+
+In the example above, `ls` is the **command**, `-F` is the option, and `"./Desktop"` is called the argument. 
 
 ```
 ls -F "./Desktop"
 ```
-The command `ls` lists the contents of the directory of interest. The option `-F` makes the listed output more comprehensible. Finally, the argument `"./Desktop"` specifies that the command needs to act on the Desktop directory present in the current working directory. Note that `.` is a short-hand to denote the current working directory.
+The command `ls` lists the contents of the directory of interest. 
 
+The option `-F` makes the listed output more comprehensible. Finally, the argument `"./Desktop"` specifies that the command needs to act on the Desktop directory present in the current working directory. 
 
+Note that `.` is a short-hand to denote the current working directory.
+
+A few important points:
 1. Options change the behavior of commands.
 2. Arguments tell the command what (e.g. specific file or directory) to operate on.
 3. A command doesn't always require options and arguments. Moreover, commands can be called with multiple options and arguments. Therefore, options and arguments are also called **parameters**.
+
+
 
 | Command | Description |
 | --- | --- |
