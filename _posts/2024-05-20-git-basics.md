@@ -10,7 +10,7 @@ The blog's primary objective is to provide a big picture of what Git Bash is, it
 **Shell** is a program that allows us to communicate with the computer using text-based commands. Shell is also called a **Terminal** or **Command-line**. The Unix shell is a shell that is both a **command-line interface** and a scripting language. Note  that Unix is different from the Unix shell. Unix is an operating system, just like Windows and Macintosh. Bash, the most popular Unix shell, is the default shell on most Unix operating systems. However, the Unix shell is not the default shell on a Windows system. Windows users instead use Git BASH, a software that provides a Bash-like interface when interacting with Git. 
 Although a Graphical User Interface (GUI) is easier to use, a Command-line Interface is more convenient to work with when we want to automate several tasks.
 
-Note that most resources[^2][^3][^4] that I came across, focus on the Unix shell, which is compatible with a Mac or Linux OS. Moreover, learning Unix shell basics is important when working with Neuroimaging Software like AFNI and FSL. The blog provides an overview of Unix Shell basics.
+Note that most resources[^2][^3][^4] that I came across, focus on the Unix shell, which is compatible with a Mac or Linux OS. Moreover, learning Unix shell basics is important when working with Neuroimaging Software like AFNI and FSL. The blog provides an overview of Unix Shell basics. 
 
 ![terminal](/images/terminal.png)
 
