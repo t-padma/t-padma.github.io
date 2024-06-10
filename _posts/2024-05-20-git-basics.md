@@ -43,10 +43,10 @@ A few important points:
 - Commands are case-sensitive. For instance, `ls -s` is a different command from `ls -S`.
 
 
-| Command | Option(s) | Description |
-| --- | --- | --- |
-| `ls` | list |  aa |
-| `help` | help |  bb |
+| Command | Description |
+| --- | --- |
+| `ls` | List contents |
+| `help` |  bb |
 
 
 
