@@ -41,6 +41,7 @@ A few important points:
 - Commands followed by one dash, e.g. `ls -F`, are called short options. On the other hand, commands followed by two dashes, e.g. `ls --help`, are called long options.
 - `cd -` and `cd ..` are shortcuts to move back and forth between two directories.
 - Commands are case-sensitive. For instance, `ls -s` is a different command from `ls -S`.
+- Path to a file or directory is always provided in quotes. E.g. `ls -F "./dir1/subdir"`
 
 ### Multiple options for a given command
 Consider the following example:
@@ -60,8 +61,10 @@ For example, to understand the options available for `ls`, use the command `ls -
 
 | Command | Description |
 | --- | --- |
-| `ls` | List contents |
-| `help` |  bb |
+| `ls` | List contents in the current working directory |
+| `cd` | change current working directory  |
+| `pwd` |  print working directory  |
+| `clear` | To clear the terminal when screen gets too cluttered. |
 
 
 
