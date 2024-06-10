@@ -42,6 +42,7 @@ A few important points:
 - `cd -` and `cd ..` are shortcuts to move back and forth between two directories.
 - Commands are case-sensitive. For instance, `ls -s` is a different command from `ls -S`.
 - Path to a file or directory is always provided in quotes. E.g. `ls -F "./dir1/subdir"`
+- A command (with/without options) followed by no arguments implements the command in the current working directory.
 
 ### Multiple options for a given command
 Consider the following example:
@@ -65,6 +66,7 @@ For example, to understand the options available for `ls`, use the command `ls -
 | `cd` | change current working directory  |
 | `pwd` |  print working directory  |
 | `clear` | To clear the terminal when screen gets too cluttered. |
+| `mkdir` | To make a new directory |
 
 
 
