@@ -42,6 +42,21 @@ A few important points:
 - `cd -` and `cd ..` are shortcuts to move back and forth between two directories.
 - Commands are case-sensitive. For instance, `ls -s` is a different command from `ls -S`.
 
+### Multiple options for a given command
+Consider the following example:
+```
+ls -h -l
+```
+The option `-h` ensures that the output is "human readable" while the option `-l` provides a long list format. In other words, the long list provides information like file size, time last modified, etc in addition to the file/directory name.
+
+Often, multiple options like the one above can be combined with a single dash and no spaces as follows:
+```
+ls -hl
+```
+
+The table below provides a brief description of different commands. To look at the available options use the `help` option. 
+
+For example, to understand the options available for `ls`, use the command `ls --help`. Note that this option might not work for built-in commands. In such cases, try `help xxx` to get a description for the command `xxx`.
 
 | Command | Description |
 | --- | --- |
