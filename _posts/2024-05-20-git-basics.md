@@ -35,6 +35,12 @@ A few important points:
 2. Arguments tell the command what (e.g. specific file or directory) to operate on.
 3. A command doesn't always require options and arguments. Moreover, commands can be called with multiple options and arguments. Therefore, options and arguments are also called **parameters**.
 
+### Useful shortcuts
+- `./` denotes the current working directory while `~` denotes the home directory.
+- `../` goes a step back w.r.t the current working directory.
+- Commands followed by one dash, e.g. `ls -F`, are called short options. On the other hand, commands followed by two dashes, e.g. `ls --help`, are called long options.
+- `cd -` and `cd ..` are shortcuts to move back and forth between two directories.
+- Commands are case-sensitive. For instance, `ls -s` is a different command from `ls -S`.
 
 
 | Command | Option(s) | Description |
