@@ -43,6 +43,21 @@ A few important points:
 - Commands are case-sensitive. For instance, `ls -s` is a different command from `ls -S`.
 - Path to a file or directory is always provided in quotes. E.g. `ls -F "./dir1/subdir"`
 - A command (with/without options) followed by no arguments implements the command in the current working directory.
+- Wildcards like `*` and `?` represent character(s). `*` can stand for represents zero or more characters while `?` represents exactly one character. The example below explains the use of `*` and `?`. 
+
+```
+$ ls
+cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+
+$ ls *.pdb
+cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+
+$ ls *eth*
+ethane.pdb  methane.pdb
+
+$ ls ?ropane.pdb
+propane.pdb
+```
 
 ### Multiple options for a given command
 Consider the following example:
@@ -70,7 +85,7 @@ For example, to understand the options available for `ls`, use the command `ls -
 |`rm` <br> `rm -i` <br> `rm -r`| to remove files. <br> The `-i` option will prompt before (every) removal. Useful since files can be deleted permanently. <br> To remove a directory and all its contents|
 |`touch draft.txt`| to create a new text file called `draft` in the current working directory. |
 |`mv`<br> `mv "./dir/abc.txt" "./dir/xyz.txt"` <br> `mv "./dir/abc.txt" "./dir2/subdir/abc.txt"` | to move or rename files/directories. <br> Rename the file `abc.txt` in `dir` as `xyz.txt`.<br> Move the file `abc.txt` in `dir1` to new location i.e. in `./dir2/subdir`.|
-| `cp` <br> `cp -r`| To copy files. <br> To copy a directory and all its contents |
+| `cp` <br> `cp -r` <br> `cp "./dir/some.dat" "./dir2/other.dat" ".\new-dir"`| To copy files. <br> To copy a directory and all its contents <br> `cp` can copy multiple files to `new-dir` |
   
 
 
