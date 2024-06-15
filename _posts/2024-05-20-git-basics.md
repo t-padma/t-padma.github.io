@@ -69,7 +69,7 @@ For example, to understand the options available for `ls`, use the command `ls -
 | `mkdir`<br> `mkdir -p "./dir/sub-dir/subsub-dir"` <br> `mkdir dir1 dir2`| To make a new directory. <br> Use option `-p` to create nested directories <br> Creates new directories called `dir1` and `dir2` in current working directory. |
 |`rm`| to remove files.|
 |`touch draft.txt`| to create a new text file called `draft` in the current working directory. |
-  
+|`mv`| to move or rename|
   
 
 
