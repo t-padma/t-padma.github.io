@@ -57,6 +57,9 @@ ethane.pdb  methane.pdb
 
 $ ls ?ropane.pdb
 propane.pdb
+
+$ ls ???ane.pdb
+cubane.pdb  ethane.pdb  octane.pdb
 ```
 
 ### Multiple options for a given command
