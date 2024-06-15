@@ -67,10 +67,10 @@ For example, to understand the options available for `ls`, use the command `ls -
 | `pwd` |  print working directory  |
 | `clear` | To clear the terminal when screen gets too cluttered. |
 | `mkdir`<br> `mkdir -p "./dir/sub-dir/subsub-dir"` <br> `mkdir dir1 dir2`| To make a new directory. <br> Use option `-p` to create nested directories <br> Creates new directories called `dir1` and `dir2` in current working directory. |
-|`rm`| to remove files.|
+|`rm` <br> `rm -i` <br> `rm -r`| to remove files. <br> The `-i` option will prompt before (every) removal. Useful since files can be deleted permanently. <br> To remove a directory and all its contents|
 |`touch draft.txt`| to create a new text file called `draft` in the current working directory. |
 |`mv`<br> `mv "./dir/abc.txt" "./dir/xyz.txt"` <br> `mv "./dir/abc.txt" "./dir2/subdir/abc.txt"` | to move or rename files/directories. <br> Rename the file `abc.txt` in `dir` as `xyz.txt`.<br> Move the file `abc.txt` in `dir1` to new location i.e. in `./dir2/subdir`.|
-| `cp` | To copy files |
+| `cp` <br> `cp -r`| To copy files. <br> To copy a directory and all its contents |
   
 
 
