@@ -62,14 +62,15 @@ For example, to understand the options available for `ls`, use the command `ls -
 
 | Command | Description |
 | --- | --- |
-| `ls` | List contents in the current working directory |
+| `ls` <br> `ls "./path1" "./path2"`| List contents in the current working directory. <br> `ls` can be be given multiple paths|
 | `cd` | change current working directory  |
 | `pwd` |  print working directory  |
 | `clear` | To clear the terminal when screen gets too cluttered. |
 | `mkdir`<br> `mkdir -p "./dir/sub-dir/subsub-dir"` <br> `mkdir dir1 dir2`| To make a new directory. <br> Use option `-p` to create nested directories <br> Creates new directories called `dir1` and `dir2` in current working directory. |
 |`rm`| to remove files.|
 |`touch draft.txt`| to create a new text file called `draft` in the current working directory. |
-|`mv`| to move or rename|
+|`mv`<br> `mv "./dir/abc.txt" "./dir/xyz.txt"` <br> `mv "./dir/abc.txt" "./dir2/subdir/abc.txt"` | to move or rename files/directories. <br> Rename the file `abc.txt` in `dir` as `xyz.txt`.<br> Move the file `abc.txt` in `dir1` to new location i.e. in `./dir2/subdir`.|
+| `cp` | To copy files |
   
 
 
