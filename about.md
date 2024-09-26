@@ -26,7 +26,7 @@ titles:
 key: page-about
 ---
 
-I'm a third-year Statistics PhD student at Penn State with a keen interest in Topological Data Analysis (TDA) and its potential applications in neuroscience and neuroimaging data analysis. This blog serves as a personal journal to document my evolving understanding of TDA, neuroscience, and neuroimaging data analysis techniques throughout my PhD journey.
+I'm a fourth-year Statistics PhD student at Penn State with a keen interest in Topological Data Analysis (TDA) and its potential applications in neuroscience and neuroimaging data analysis. This blog serves as a personal journal to document my evolving understanding of TDA, statistics, and neuroimaging data analysis techniques throughout my PhD journey.
 
 Prior to joining Penn State, I completed a five-year integrated Master's program in Mathematics at the National Institute of Science Education and Research in Bhubaneswar, India.
 
