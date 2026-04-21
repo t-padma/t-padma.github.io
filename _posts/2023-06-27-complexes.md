@@ -84,7 +84,7 @@ $$
 
 The collection of Voronoi cells $\lbrace \mathcal{V}(s_i) \rbrace_{i=1}^n$ and their faces constitute the **Voronoi Diagram** of $S$, denoted as $\mathcal{V}(S)$. Nerve of the cover associated with this diagram gives the abstract simplicial complex called **Delaunay Complex**.
 
-![dell](/images/del2.png)
+![dell](/images/data_vor_del.svg)
 
 #### Mathematical structure of $\mathcal{V}(S)$
 The Voronoi diagram of $S$ is a mathematical structure called **Cell Complex** which can be thought of as the generalization of a simplicial complex. [^8] Observe that a simplicial complex $K$ is made of simplices which are all, in general, said to be the *faces* of $K$. Similarly, a cell complex $C$ is made up of "special" *faces* that satisfy the properties that the simplices in $K$ satisfy. Let $f, g \in C$, then
@@ -106,7 +106,7 @@ $$
 
 **Remark:** $\partial \mathcal{B}$ and $\mathrm{Int}(\mathcal{B})$ denote the boundary and interior of $\mathcal{B}$ respectively while the symbol $\sqcup$ refers to disjoint union of sets. Given a Delaunay simplex $\langle v_0, \cdots v_p \rangle$ for $p \leq d$, we can visualize it as $p+1$ points lying on the surface of a sphere in $\mathbb{R}^d$. Below is the example of a case that is easy to draw: Consider $p=d=2$ i.e. we have a $2$-simplex $\langle a, b, c\rangle$ in $\mathbb{R^2}$ which is Delaunay.
 
-![del](/images/data_vor_del.svg)
+![del](/images/del.png)
 
 Then, the **Delaunay complex** associated with $S$ is defined as:
 
