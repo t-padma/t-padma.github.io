@@ -5,7 +5,7 @@ mathjax: true
 tags: intro tda complexes alg_topo
 ---
 
-### Introduction and Motivation
+## Introduction and Motivation
 The contents of this post are predominantly based on the review paper by Otter et al. [^1] which discusses the computational aspects of Persistent Homology (PH). To begin with, the first four sections of the paper give a very good introduction to TDA without getting lost in unnecessary mathematical details. I believe that this can serve as a first introduction to PH for anyone who later wishes to understand PH with proper mathematical rigor. However, in the current post, I would like to focus on the first half of section five which familiarizes the reader with some of the **simplicial complexes** used while working with *point-cloud data*.
 
 TDA deals with data that can be viewed as *finite metric spaces*. Such data sets are also referred to as point-cloud data sets. For instance, networks and digital images can be modeled as finite metric spaces. The lecture notes by [Prof. Vidit Nanda](https://people.maths.ox.ac.uk/nanda/)[^2] were extremely helpful in learning some basics of computational topology. The article by Lazar and Ryu[^3] does a really good job of giving the big picture for TDA. Now, given a finite set of points, we wish to encode the "shape" information of the data into a simplicial complex which is much easier to handle mathematically. Simplicial complexes give us the benefit of exploiting the well-understood field of simplicial homology which is known to be better in terms of computations. 
@@ -21,7 +21,7 @@ $$
 
 **Big picture:** Persistent homology is a tool that allows the encoding of shape information at different scales. At each scale value, we need to store the shape information in the form of a simplicial complex. Finite metric spaces are not topologically interesting[^4], hence we try to "fill in the gaps" between data points if they are "close enough" in some sense. That way we will be able to impose topological structures onto the data.[^5] The idea is that if we build a simplicial complex $K$ on set $S$, then the homology of $K$ has to at least ``approximate" the homology of $X$. Hence the choice of how to construct the simplicial complex matters. 
 
-### $\check{\mathcal{C}}(S; \epsilon)$: Cech complex at scale $\epsilon \> 0$ 
+## $\check{\mathcal{C}}(S; \epsilon)$: Cech complex at scale $\epsilon \> 0$ 
 Given a fixed positive $\epsilon \in \mathbb{R}$, the **Aleksandrov-Cech** complex, also commonly known as the **Cech complex**, at scale $\epsilon$ is defined as the **intersection complex** or **nerve** of the $\epsilon$-balls associated with set $S$. The resource [Cech Complex playground](https://sauln.github.io/blog/nerve-playground/) is a useful visualization tool. The Cech complex, denoted by $\check{\mathcal{C}}(S, \epsilon)$, is defined as follows:
 
 $$
@@ -34,7 +34,7 @@ Let $\mathcal{A} = \lbrace A_1, \cdots, A_m \rbrace$ be a family of "nice" subse
 
 Assume $\|S\| = n$, then the worst case size (i.e. cardinality of the set $K$) of the simplicial complex associated with data is $\mathcal{O}(2^n)$. The number of steps required to associate the data to a simplicial complex is also $\mathcal{O}(2^n)$ since we have to check the intersection of all possible collections of simplices in $K$.
 
-### $\mathcal{VR}(S; \epsilon)$: Vietoris-Rips complex at scale $\epsilon \> 0$
+## $\mathcal{VR}(S; \epsilon)$: Vietoris-Rips complex at scale $\epsilon \> 0$
 When homology theory was still new, Leopold Vietoris used a complex that is similar to the Vietoris-Rips complex to model metric spaces using finite simplicial complexes. The Vietoris-Rips complex, often called the Rips complex, is now commonly used in TDA due to its computational benefits over the Cech complex. The Rips complex associated with the dataset $S$ is defined as follows:
 
 $$
@@ -66,7 +66,7 @@ $$
 
 Despite the computational benefits, one of the major drawbacks of the Rips complex is that we do not have Nerve Lemma-like theoretical guarantees. However, a couple of weaker results can be found in the lecture notes by Prof. Jeff Erickson.[^5]
 
-### $\mathrm{Del}(S, \mathbb{R}^d)$: Delaunay complex
+## $\mathrm{Del}(S, \mathbb{R}^d)$: Delaunay complex
 Delaunay complex is a **sparse** complex i.e. it does not contain "too many" simplices. Observe that even though the Rips complex construction takes polynomial time, the size of the Rips or Cech complex is still exponential which can be very difficult to handle in practice.[^7] This forms a simple motivation to search for complexes that are "sparse". For now, we assume $X = \mathbb{R}^d$.
 
 There are two equivalent ways of defining the Delaunay complex - one involves the **Voronoi Diagram** of the data set $S$ and the other is more abstract but becomes more understandable once we understand the first definition. [^8] The **Delaunay complex** of a finite set $S$ is the nerve of the Voronoi diagram of $S$. Let $S = \lbrace s_1, s_2, \cdots, s_n \rbrace \subset \mathbb{R}^d$ be a set with $n$ *distinct points*. The define the **Voronoi cell** of $s_i$, $\mathcal{V}(s_i, S)$, as the locus of all points in $\mathbb{R}^d$ that are closest to $s_i$ than any other $s_j$ for $j \neq i$.
@@ -86,7 +86,8 @@ The collection of Voronoi cells $\lbrace \mathcal{V}(s_i) \rbrace_{i=1}^n$ and t
 
 ![dell](/images/data_vor_del.svg)
 
-#### Mathematical structure of $\mathcal{V}(S)$
+**Mathematical structure of $\mathcal{V}(S)$**
+
 The Voronoi diagram of $S$ is a mathematical structure called **Cell Complex** which can be thought of as the generalization of a simplicial complex. [^8] Observe that a simplicial complex $K$ is made of simplices which are all, in general, said to be the *faces* of $K$. Similarly, a cell complex $C$ is made up of "special" *faces* that satisfy the properties that the simplices in $K$ satisfy. Let $f, g \in C$, then
 
 1. Any face of $f$ is a face of $C$.
@@ -114,7 +115,8 @@ $$
 \mathrm{Del}(S, \mathbb{R}^d) = \lbrace \sigma : \sigma \in S \text{ and } \sigma \text{ is Delaunay } \rbrace
 $$
 
-#### What is "nice" about the Delaunay Complex?
+**What is "nice" about the Delaunay Complex?**
+
 Given the definition of Delaunay simplices, it is natural to wonder if the Delaunay complex can exist for a specific dataset $S$. If it exists, what theoretical guarantees or benefits does it provide? The facts mentioned below[^7], summarize without proof, the "niceness" of Delaunay complex in certain scenarios:
 
 * Every *non-degenerate point set*[^9] $S$ in $\mathbb{R}^d$ admits a *unique* Delaunay complex.
@@ -128,11 +130,11 @@ One of the most fundamental assumptions in TDA is that the underlying space $X$ 
 1. In the case of Cech/Rips, there exists a scale parameter $\epsilon$ which determines how refined our simplicial approximation is. Instead of looking at the "best" epsilon, we look at a sequence of simplicial approximations and try to observe how the topology changes with a change in the $\epsilon$ value.
 2. While working with Delaunay, the output we get is a particular triangulation or simplicial approximation which is the "best" in certain ways.
 
-#### Limitations
-Due to the different optimal properties listed in the textbook by Dey and Wang[^7], this complex is used mostly while working with $X = \mathbb{R}^2$ or $\mathbb{R}^3$. However, computations in $\mathbb{R}^d$ for $d \geq 4$ are time intensive and hence not yet a widely used complex in higher dimensions. 
+**Limitations**:Due to the different optimal properties listed in the textbook by Dey and Wang[^7], this complex is used mostly while working with $X = \mathbb{R}^2$ or $\mathbb{R}^3$. However, computations in $\mathbb{R}^d$ for $d \geq 4$ are time intensive and hence not yet a widely used complex in higher dimensions. 
 
 **Note:** Prof. [Peter Bubenik's](https://people.clas.ufl.edu/peterbubenik/) website[^11] has some useful R resources for TDA. In particular, it has an R worksheet on how to generate Voronoi diagrams and Delaunay complexes.
-### Alpha Complex
+
+## Alpha Complex
 
 ### Witness complex
 
