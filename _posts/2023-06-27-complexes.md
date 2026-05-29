@@ -128,7 +128,7 @@ Given the definition of Delaunay simplices, it is natural to wonder if the Delau
 One of the most fundamental assumptions in TDA is that the underlying space $X$ from which data $S$ is sampled has the topological property that they can be **triangulated**. Intuitively, this means, the object's shape from which data is obtained can be approximated using a **simplicial complex**. Now, the next natural question is - Which simplicial approximation do we choose and how? This can be dealt with in two different ways: 
 
 1. In the case of Cech/Rips, there exists a scale parameter $\epsilon$ which determines how refined our simplicial approximation is. Instead of looking at the "best" epsilon, we look at a sequence of simplicial approximations and try to observe how the topology changes with a change in the $\epsilon$ value.
-2. While working with Delaunay, the output we get is a particular triangulation or simplicial approximation which is the "best" in certain ways.
+2. While working with Delaunay, the output we get is a particular triangulation or simplicial approximation which is the "best" in certain ways. In order to obtain a filration of the Delaunay complex, we work with simplicial complexes called **Alpha Complexes**. Alpha filtration, like the Rips filtration, provides insight into the topology of data at different scales $\epsilon$.
 
 **Limitations**:Due to the different optimal properties listed in the textbook by Dey and Wang[^7], this complex is used mostly while working with $X = \mathbb{R}^2$ or $\mathbb{R}^3$. However, computations in $\mathbb{R}^d$ for $d \geq 4$ are time intensive and hence not yet a widely used complex in higher dimensions. 
 
