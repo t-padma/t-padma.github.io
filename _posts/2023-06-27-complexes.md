@@ -134,14 +134,16 @@ One of the most fundamental assumptions in TDA is that the underlying space $X$ 
 
 **Note:** Prof. [Peter Bubenik's](https://people.clas.ufl.edu/peterbubenik/) website[^11] has some useful R resources for TDA. In particular, it has an R worksheet on how to generate Voronoi diagrams and Delaunay complexes.
 
-## Alpha Complex
+## $\mathrm{Alpha}(S; \epsilon)$: Alpha Complex at scale $\epsilon > 0$
+Alpha complexes are sub-complexes of the Delaunay complex, $\mathrm(Del)(S)$, that are parametrized with respect to the scale parameter $\epsilon >0$. Intuitively, the alpha complex is obtained by taking the nerve of the intersection between Voronoi diagran $\mathcal{V}(S)$, and union of balls of radius $\epsilon$ cneterd at all points in $S$. This intuition is visualized using a simple annulus data. It visualizes the steps involved in computing the alpha complex at scale $\epsilon = 0.5$.
 
-### Witness complex
+[](./images/clipped_balls.svg)
 
+Given a finite dataset $S$, alpha complex at scale $\epsilon>0$ is defined as the nerve of closed sets $\mathcal{A} = \lbrace A_s(\epsilon) \rbrace$ where sets $A_s(\epsilon)$ are defined as:
 
-
-
-
+$$
+A_s(\epsilon) = \lbrace x \in \mathcal{B}(s; \epsilon) \text{  } | \text{  } d(x, s) \leq d(x, s') \text{ for all } s' \in S  \rbrace
+$$
 
 
 
