@@ -137,7 +137,7 @@ One of the most fundamental assumptions in TDA is that the underlying space $X$ 
 ## $\mathrm{Alpha}(S; \epsilon)$: Alpha Complex at scale $\epsilon > 0$
 Alpha complexes are sub-complexes of the Delaunay complex, $\mathrm(Del)(S)$, that are parametrized with respect to the scale parameter $\epsilon >0$. Intuitively, the alpha complex is obtained by taking the nerve of the intersection between Voronoi diagran $\mathcal{V}(S)$, and union of balls of radius $\epsilon$ cneterd at all points in $S$. This intuition is visualized using a simple annulus data. It visualizes the steps involved in computing the alpha complex at scale $\epsilon = 0.5$.
 
-[](./images/clipped_balls.svg)
+[](/images/clipped_balls.svg)
 
 Given a finite dataset $S$, alpha complex at scale $\epsilon>0$ is defined as the nerve of closed sets $\mathcal{A} = \lbrace A_s(\epsilon) \text{ } | \text{ } s \in S \rbrace$ where sets $A_s(\epsilon)$ are defined as:
 
