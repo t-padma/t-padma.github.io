@@ -139,7 +139,7 @@ Alpha complexes are sub-complexes of the Delaunay complex, $\mathrm(Del)(S)$, th
 
 [](./images/clipped_balls.svg)
 
-Given a finite dataset $S$, alpha complex at scale $\epsilon>0$ is defined as the nerve of closed sets $\mathcal{A} = \lbrace A_s(\epsilon) \rbrace$ where sets $A_s(\epsilon)$ are defined as:
+Given a finite dataset $S$, alpha complex at scale $\epsilon>0$ is defined as the nerve of closed sets $\mathcal{A} = \lbrace A_s(\epsilon) \text{ } | \text{ } s \in S \rbrace$ where sets $A_s(\epsilon)$ are defined as:
 
 $$
 A_s(\epsilon) = \lbrace x \in \mathcal{B}(s; \epsilon) \text{  } | \text{  } d(x, s) \leq d(x, s') \text{ for all } s' \in S  \rbrace
