@@ -135,7 +135,7 @@ One of the most fundamental assumptions in TDA is that the underlying space $X$ 
 **Note:** Prof. [Peter Bubenik's](https://people.clas.ufl.edu/peterbubenik/) website[^11] has some useful R resources for TDA. In particular, it has an R worksheet on how to generate Voronoi diagrams and Delaunay complexes.
 
 ## $\mathrm{Alpha}(S; \epsilon)$: Alpha Complex at scale $\epsilon > 0$
-Alpha complexes are sub-complexes of the Delaunay complex, $\mathrm(Del)(S)$, that are parametrized with respect to the scale parameter $\epsilon >0$. Intuitively, the alpha complex is obtained by taking the nerve of the intersection between Voronoi diagran $\mathcal{V}(S)$, and union of balls of radius $\epsilon$ cneterd at all points in $S$. This intuition is visualized using a simple annulus data. It visualizes the steps involved in computing the alpha complex at scale $\epsilon = 0.5$.
+Alpha complexes are sub-complexes of the Delaunay complex, $\mathrm(Del)(S)$, that are parametrized with respect to the scale parameter $\epsilon >0$. Intuitively, the alpha complex is obtained by taking the nerve of the intersection between Voronoi diagran $\mathcal{V}(S)$, and union of balls of radius $\epsilon$ cneterd at all points in $S$. This intuition is visualized using a simple annulus data. It visualizes the steps involved in computing the alpha complex at scale $\epsilon = 0.5$[^12].
 
 [](/images/clipped_balls.svg)
 
@@ -145,6 +145,11 @@ $$
 A_s(\epsilon) = \lbrace x \in \mathcal{B}(s; \epsilon) \text{  } | \text{  } d(x, s) \leq d(x, s') \text{ for all } s' \in S  \rbrace
 $$
 
+Moreover, Nerve theorem guarantees that the union of balls of radius $\epsilon$ has the same homotopy type as the apha complex at scale $\epsilon >0$. Mathematically, the following holds:
+
+$$
+\bigcup_{s \in S} \mathcal{B}(s; \epsilon) \simeq \mathrm{Alpha}(S; \epsilon)
+$$
 
 
 
@@ -165,3 +170,4 @@ $$
 [^9]: [Non-degenerate point set](https://math.stackexchange.com/questions/4189802/are-the-vertices-of-a-non-degenerate-n-simplex-in-mathbbrn1-linearly), Math StackExchange
 [^10]: Weisstein, Eric W. "[Hypersphere](https://mathworld.wolfram.com/Hypersphere.html)." From MathWorld--A Wolfram Web Resource.
 [^11]: Peter Bubenik's [TDA resources](https://people.clas.ufl.edu/peterbubenik/intro-to-tda/), Dept. of Mathematics, University of Florida
+[^12]: Edelsbrunner, Herbert; Harer, John L. [*Computational Topology: An Introduction*](https://webhomes.maths.ed.ac.uk/~v1ranick/papers/edelcomp.pdf). American Mathematical Society, 2010.
